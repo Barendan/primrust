@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
 
-      <nav aria-label="main navigation" className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <nav aria-label="main navigation" className="navbar navbar-expand-lg navbar-dark fixed-top" id="menu5">
       <a href="/" className="navbar-brand">
         <img src="https://files.facepunch.com/s/c0444ba57c9a.svg" alt="Rust" width="112" height="28"/>
       </a>
@@ -25,18 +25,26 @@ function App() {
 
       <div className="collapse navbar-collapse"
            id="navbarSupportedContent">
-        <ul className="navbar-nav mr-auto">
+        <ul className="navbar-nav ml-auto">
           <li className="nav-item">
-            <a href="/blog/" className="nav-link">Features</a>
+            <a href="/blog/" className="nav-link">
+              <span className="text-center">Discord</span>
+            </a>
           </li>
           <li className="nav-item">
-            <a href="https://store.facepunch.com/" className="nav-link">Discord</a>
+            <a href="https://store.facepunch.com/" className="nav-link">
+              <span className="text-center">Features</span>
+            </a>
           </li>
           <li className="nav-item">
-            <a href="/console" className="nav-link">Donate</a>
+            <a href="/changes/" className="nav-link">
+              <span className="text-center">Mods</span>
+            </a>
           </li>
           <li className="nav-item">
-            <a href="/changes/" className="nav-link">Changelist</a>
+            <a href="/console" className="nav-link">
+              <span className="text-center">Donate</span>
+            </a>
           </li>
         </ul>
       </div>
@@ -158,10 +166,10 @@ function App() {
             <div className="row m-5 justify-content-around">
 
               <div className="col-lg-5">
-                <table class="table table-hover table-striped">
+                <table className="table table-hover table-striped">
                   <thead className="text-center h5">
                       <tr>
-                          <th>Plugins</th>
+                          <th>Plugins Used</th>
                       </tr>
                   </thead>
                   <div className="pluglist" id="style-1">
@@ -169,66 +177,66 @@ function App() {
                     <tr>
                         <td>AlphaLoot</td>
                     </tr>
-                    <tr> <td> AutomatedEvents </td> </tr>
-                    <tr> <td> Backpacks </td> </tr>
-                    <tr> <td> BalloonPlus </td> </tr>
-                    <tr> <td> BarrelPoints </td> </tr>
-                    <tr> <td> BetterChatFilter </td> </tr>
-                    <tr> <td> BypassQueue </td> </tr>
-                    <tr> <td> Clans </td> </tr>
-                    <tr> <td> CraftingController </td> </tr>
-                    <tr> <td> CraftQueueSaver </td> </tr>
-                    <tr> <td> CustomRock </td> </tr>
-                    <tr> <td> DangerousTreasures </td> </tr>
-                    <tr> <td> DynamicCupboardShare </td> </tr>
-                    <tr> <td> EnhancedHammer </td> </tr>
-                    <tr> <td> EntityLimit </td> </tr>
-                    <tr> <td> Feudalism </td> </tr>
-                    <tr> <td> FinishMe </td> </tr>
-                    <tr> <td> FireSword </td> </tr>
-                    <tr> <td> Fishing </td> </tr>
-                    <tr> <td> FurnaceSplitter </td> </tr>
-                    <tr> <td> GatherManager </td> </tr>
-                    <tr> <td> HeliControl </td> </tr>
-                    <tr> <td> Ignore </td> </tr>
-                    <tr> <td> InfoPanel </td> </tr>
-                    <tr> <td> Kits </td> </tr>
-                    <tr> <td> KnockKnock </td> </tr>
-                    <tr> <td> LootBouncer </td> </tr>
-                    <tr> <td> Metabolism </td> </tr>
-                    <tr> <td> Neverwear </td> </tr>
-                    <tr> <td> NightLantern </td> </tr>
-                    <tr> <td> NoEscape </td> </tr>
-                    <tr> <td> NoGiveNotices </td> </tr>
-                    <tr> <td> NPCDropGun </td> </tr>
-                    <tr> <td> NPCSetup </td> </tr>
-                    <tr> <td> Pets </td> </tr>
-                    <tr> <td> PlayerChallenges </td> </tr>
-                    <tr> <td> PlayerRankings </td> </tr>
-                    <tr> <td> PrivateMessages </td> </tr>
-                    <tr> <td> QuickSmelt </td> </tr>
-                    <tr> <td> QuickSort </td> </tr>
-                    <tr> <td> RaidNotice </td> </tr>
-                    <tr> <td> RandomSpawns </td> </tr>
-                    <tr> <td> ResearchBlock </td> </tr>
-                    <tr> <td> RidableHorseOptions </td> </tr>
-                    <tr> <td> ServerInfo </td> </tr>
-                    <tr> <td> ServerRewards </td> </tr>
-                    <tr> <td> SignArtist </td> </tr>
-                    <tr> <td> Skinbox </td> </tr>
-                    <tr> <td> StackSizeController </td> </tr>
-                    <tr> <td> TimedExecute </td> </tr>
-                    <tr> <td> TimeofDay </td> </tr>
-                    <tr> <td> TrophySigns </td> </tr>
-                    <tr> <td> UpgradeWorkbenches </td> </tr>
-                    <tr> <td> WeaponDamageScaler </td> </tr>
-                    <tr> <td> WipeKits </td> </tr>
+                    <tr><td>AutomatedEvents</td></tr>
+                    <tr><td>Backpacks</td></tr>
+                    <tr><td>BalloonPlus</td></tr>
+                    <tr><td>BarrelPoints</td></tr>
+                    <tr><td>BetterChatFilter</td></tr>
+                    <tr><td>BypassQueue</td></tr>
+                    <tr><td>Clans</td></tr>
+                    <tr><td>CraftingController</td></tr>
+                    <tr><td>CraftQueueSaver</td></tr>
+                    <tr><td>CustomRock</td></tr>
+                    <tr><td>DangerousTreasures</td></tr>
+                    <tr><td>DynamicCupboardShare</td></tr>
+                    <tr><td>EnhancedHammer</td></tr>
+                    <tr><td>EntityLimit</td></tr>
+                    <tr><td>Feudalism</td></tr>
+                    <tr><td>FinishMe</td></tr>
+                    <tr><td>FireSword</td></tr>
+                    <tr><td>Fishing</td></tr>
+                    <tr><td>FurnaceSplitter</td></tr>
+                    <tr><td>GatherManager</td></tr>
+                    <tr><td>HeliControl</td></tr>
+                    <tr><td>Ignore</td></tr>
+                    <tr><td>InfoPanel</td></tr>
+                    <tr><td>Kits</td></tr>
+                    <tr><td>KnockKnock</td></tr>
+                    <tr><td>LootBouncer</td></tr>
+                    <tr><td>Metabolism</td></tr>
+                    <tr><td>Neverwear</td></tr>
+                    <tr><td>NightLantern</td></tr>
+                    <tr><td>NoEscape</td></tr>
+                    <tr><td>NoGiveNotices</td></tr>
+                    <tr><td>NPCDropGun</td></tr>
+                    <tr><td>NPCSetup</td></tr>
+                    <tr><td>Pets</td></tr>
+                    <tr><td>PlayerChallenges</td></tr>
+                    <tr><td>PlayerRankings</td></tr>
+                    <tr><td>PrivateMessages</td></tr>
+                    <tr><td>QuickSmelt</td></tr>
+                    <tr><td>QuickSort</td></tr>
+                    <tr><td>RaidNotice</td></tr>
+                    <tr><td>RandomSpawns</td></tr>
+                    <tr><td>ResearchBlock</td></tr>
+                    <tr><td>RidableHorseOptions</td></tr>
+                    <tr><td>ServerInfo</td></tr>
+                    <tr><td>ServerRewards</td></tr>
+                    <tr><td>SignArtist</td></tr>
+                    <tr><td>Skinbox</td></tr>
+                    <tr><td>StackSizeController</td></tr>
+                    <tr><td>TimedExecute</td></tr>
+                    <tr><td>TimeofDay</td></tr>
+                    <tr><td>TrophySigns</td></tr>
+                    <tr><td>UpgradeWorkbenches</td></tr>
+                    <tr><td>WeaponDamageScaler</td></tr>
+                    <tr><td>WipeKits</td></tr>
                   </tbody>
                   </div>
               </table>
               </div>
               <div className="col-lg-5">
-                <table class="table table-hover">
+                <table className="table table-hover table-striped">
                   <thead className="text-center h5">
                       <tr>
                           <th>Player Ranks</th>
