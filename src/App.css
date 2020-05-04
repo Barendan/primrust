@@ -6,6 +6,12 @@ body, button, input, select, textarea {
     font-family: Open Sans;
 }
 
+*, *:after, *::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 .App {
   overflow: hidden;
 }
@@ -221,7 +227,8 @@ body, button, input, select, textarea {
 
 
 .donate {
-  background-color: #AAA;
+  background-color: #6EB257;
+  height: 95vh !important;
 }
 
 .donate h3 {
@@ -325,3 +332,174 @@ hr {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+.generalinfo {
+    position: relative;
+    padding: 2em;
+    background: #2980b9;
+    color: #fff;
+    text-align: center;
+}
+
+
+.mods section::before, .mods section::after, 
+.generalinfo section::after, .generalinfo section::before {
+    position: absolute;
+    content: '';
+    pointer-events: none;
+}
+
+.ss-style-zigzag::before, .ss-style-zigzag::after {
+    right: 0;
+    left: 0;
+    z-index: 10;
+    display: block;
+    height: 90px;
+    background-size: 100px 100%;
+}
+
+.ss-style-zigzag::before {
+    top: -90px;
+    background-image: -webkit-gradient(linear, 0 0, 300% 100%, color-stop(0.25, transparent), color-stop(0.25, #2980b9));
+    background-image: linear-gradient(315deg, #2980b9 25%, transparent 25%), linear-gradient( 45deg, #2980b9 25%, transparent 25%);
+    /*background-position: 50%;*/
+}
+
+.ss-style-zigzag::after {
+    top: 100%;
+    background-image: -webkit-gradient(linear, 0 0, 300% 100%, color-stop(0.25, #2980b9), color-stop(0.25, #2980b9));
+    background-image: linear-gradient(135deg, #2980b9 25%, transparent 25%), linear-gradient(225deg, #2980b9 25%, transparent 25%);
+    /*background-position: 50%;*/
+}
+
+
+
+
+.mods {
+    position: relative;
+    padding-top: 4rem;
+    background: #ADD7F6;
+    color: #343a40;
+}
+
+.ss-style-boxes::after {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-image: -webkit-gradient(linear, 100% 0, 0 100%, color-stop(0.5, #ADD7F6), color-stop(0.5, #ADD7F6));
+    background-image: linear-gradient(to right, #ADD7F6 50%, #6EB257 50%);
+    -webkit-background-size: 130px 100%;
+    background-size: 130px 100%;
+}
+
+
+.pluglist {
+    max-height: 400px;
+    overflow-y: scroll;
+}
+
+.tableadjust {
+    display: table;
+    width: 100%;
+}
+
+
+#style-1::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #99c2e0;
+}
+
+#style-1::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+#style-1::-webkit-scrollbar,
+#style-10::-webkit-scrollbar,
+#style-11::-webkit-scrollbar {
+    width: 15px;
+    /*background-color: #FFF;*/
+}
+
+
+#style-10::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: linear-gradient(left, #96A6BF, #63738C);
+  box-shadow: inset 0 0 1px 1px #5C6670;
+}
+
+#style-10::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #eee;
+  box-shadow: 0 0 1px 1px #bbb, inset 0 0 7px rgba(0,0,0,0.3)
+}
+
+#style-10::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(left, #8391A6, #536175);
+}
+
+
+#style-11::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: rgba(0,0,0,0.1);
+  border: 1px solid #ccc;
+}
+
+#style-11::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: linear-gradient(left, #fff, #e4e4e4);
+  border: 1px solid #aaa;
+}
+
+#style-11::-webkit-scrollbar-thumb:hover {
+  background: #fff;
+}
+
+#style-11::-webkit-scrollbar-thumb:active {
+  background: linear-gradient(left, #22ADD4, #1E98BA);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.ss-style-boxes::after {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-image: -webkit-gradient(linear, 100% 0, 0 100%, color-stop(0.5, #3498db), color-stop(0.5, #2980b9));
+    background-image: linear-gradient(to right, #3498db 50%, #2980b9 50%);
+    -webkit-background-size: 130px 100%;
+    background-size: 130px 100%;
+}*/
+
+
+/*.ss-style-boxes {
+    padding-top: 4em;
+    padding-bottom: 13em;
+}*/

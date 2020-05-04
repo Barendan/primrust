@@ -15,7 +15,7 @@ function App() {
 
       <button className="navbar-toggler" 
               type="button" 
-              data-toggle="collapse" 
+              data-toggle="collapse"
               data-target="#navbarSupportedContent" 
               aria-controls="navbarSupportedContent" 
               aria-expanded="false" 
@@ -109,57 +109,210 @@ function App() {
       </div>
 
       <div className="generalinfo container-fluid">
-          <h2 className="display-3 text-center">Features</h2>
-          <div className="row p-5 text-center">
-            <section className="col-sm-6 col-md-4 pb-5">
-              <img className="icon mb-3" src="images/system.svg" alt="Icon"/>
-              <h3 className="display-5">Dedicated System</h3>
-              <p className="subtext">Our Server runs on a Dedicated machine with the top hardware. State of the Art DDOS protection to ensure that you see 0 downtime.</p>
-            </section>
 
-            <section className="col-sm-6 col-md-4 pb-5">
-              <img className="icon mb-3" src="images/crown.svg" alt="Icon"/>
-              <h3 className="display-5">King & Lords</h3>
-              <p className="subtext">Heavy lies the head that wears the crown. Ascend the throne, collect taxes from the peasants and defend your title!</p>
-            </section>
+          <section className="ss-style-zigzag">
+            <h2 className="display-1 font-weight-bold text-center">Features</h2>
+            <div className="row p-5 text-center">
+              <section className="col-sm-6 col-md-4 pb-5">
+                <img className="icon mb-3" src="images/system.svg" alt="Icon"/>
+                <h3 className="display-5">Dedicated System</h3>
+                <p className="subtext">Our Server runs on a Dedicated machine with the top hardware. State of the Art DDOS protection to ensure that you see 0 downtime.</p>
+              </section>
 
-            <section className="col-sm-6 col-md-4 pb-5">
-              <img className="icon mb-3" src="images/roam.svg" alt="Icon"/>
-              <h3 className="display-5">Group Limit</h3>
-              <p className="subtext">When roaming outside of your base, the max group limit is 4. This rule does not apply when you are within TC radius of your base.</p>
-            </section>
+              <section className="col-sm-6 col-md-4 pb-5">
+                <img className="icon mb-3" src="images/crown.svg" alt="Icon"/>
+                <h3 className="display-5">King & Lords</h3>
+                <p className="subtext">Heavy lies the head that wears the crown. Ascend the throne, collect taxes from the peasants and defend your title!</p>
+              </section>
 
-            <section className="col-sm-6 col-md-4 pb-5">
-              <img className="icon mb-3" src="images/archery.png" alt="Icon"/>
-              <h3 className="display-5">Bow/Melee Combat</h3>
-              <p className="subtext">Immerse yourself in the Medieval times. Draw back your bowstring and shoot your enemies from a distance or rush in and clobber them with a mace.</p>
-            </section>
+              <section className="col-sm-6 col-md-4 pb-5">
+                <img className="icon mb-3" src="images/roam.svg" alt="Icon"/>
+                <h3 className="display-5">Group Limit</h3>
+                <p className="subtext">When roaming outside of your base, the max group limit is 4. This rule does not apply when you are within TC radius of your base.</p>
+              </section>
 
-            <section className="col-sm-6 col-md-4 pb-5">
-              <img className="icon mb-3" src="images/treasure.png" alt="Icon"/>
-              <h3 className="display-5">Improved Loot</h3>
-              <p className="subtext">Crates, Airdrops, and barrel loot has been improved. No more useless blueprints or junk items. Use the kit command to receive rp or electric bps.</p>
-            </section>
+              <section className="col-sm-6 col-md-4 pb-5">
+                <img className="icon mb-3" src="images/archery.png" alt="Icon"/>
+                <h3 className="display-5">Bow/Melee Combat</h3>
+                <p className="subtext">Immerse yourself in the Medieval times. Draw back your bowstring and shoot your enemies from a distance or rush in and clobber them with a mace.</p>
+              </section>
 
-            <section className="col-sm-6 col-md-4 pb-5">
-              <img className="icon mb-3" src="images/mountain.png" alt="Icon"/>
-              <h3 className="display-5">Player Leaderboard</h3>
-              <p className="subtext">Track your progress in various categories and make your way to the top of the charts. Fame and glory await you!</p>
-            </section>   
-          </div>
+              <section className="col-sm-6 col-md-4 pb-5">
+                <img className="icon mb-3" src="images/treasure.png" alt="Icon"/>
+                <h3 className="display-5">Improved Loot</h3>
+                <p className="subtext">Crates, Airdrops, and barrel loot has been improved. No more useless blueprints or junk items. Use the kit command to receive rp or electric bps.</p>
+              </section>
+
+              <section className="col-sm-6 col-md-4 pb-5">
+                <img className="icon mb-3" src="images/mountain.png" alt="Icon"/>
+                <h3 className="display-5">Player Leaderboard</h3>
+                <p className="subtext">Track your progress in various categories and make your way to the top of the charts. Fame and glory await you!</p>
+              </section>   
+            </div>
+          </section>
+      </div>
+
+      <div className="mods container-fluid vh-100">
+          <section className="ss-style-boxes">
+            <h2 className="display-1 font-weight-bold text-center">Modifications</h2>
+            <div className="row m-5 justify-content-around">
+
+              <div className="col-lg-5">
+                <table class="table table-hover table-striped">
+                  <thead className="text-center h5">
+                      <tr>
+                          <th>Plugins</th>
+                      </tr>
+                  </thead>
+                  <div className="pluglist" id="style-1">
+                  <tbody className="tableadjust">
+                    <tr>
+                        <td>AlphaLoot</td>
+                    </tr>
+                    <tr> <td> AutomatedEvents </td> </tr>
+                    <tr> <td> Backpacks </td> </tr>
+                    <tr> <td> BalloonPlus </td> </tr>
+                    <tr> <td> BarrelPoints </td> </tr>
+                    <tr> <td> BetterChatFilter </td> </tr>
+                    <tr> <td> BypassQueue </td> </tr>
+                    <tr> <td> Clans </td> </tr>
+                    <tr> <td> CraftingController </td> </tr>
+                    <tr> <td> CraftQueueSaver </td> </tr>
+                    <tr> <td> CustomRock </td> </tr>
+                    <tr> <td> DangerousTreasures </td> </tr>
+                    <tr> <td> DynamicCupboardShare </td> </tr>
+                    <tr> <td> EnhancedHammer </td> </tr>
+                    <tr> <td> EntityLimit </td> </tr>
+                    <tr> <td> Feudalism </td> </tr>
+                    <tr> <td> FinishMe </td> </tr>
+                    <tr> <td> FireSword </td> </tr>
+                    <tr> <td> Fishing </td> </tr>
+                    <tr> <td> FurnaceSplitter </td> </tr>
+                    <tr> <td> GatherManager </td> </tr>
+                    <tr> <td> HeliControl </td> </tr>
+                    <tr> <td> Ignore </td> </tr>
+                    <tr> <td> InfoPanel </td> </tr>
+                    <tr> <td> Kits </td> </tr>
+                    <tr> <td> KnockKnock </td> </tr>
+                    <tr> <td> LootBouncer </td> </tr>
+                    <tr> <td> Metabolism </td> </tr>
+                    <tr> <td> Neverwear </td> </tr>
+                    <tr> <td> NightLantern </td> </tr>
+                    <tr> <td> NoEscape </td> </tr>
+                    <tr> <td> NoGiveNotices </td> </tr>
+                    <tr> <td> NPCDropGun </td> </tr>
+                    <tr> <td> NPCSetup </td> </tr>
+                    <tr> <td> Pets </td> </tr>
+                    <tr> <td> PlayerChallenges </td> </tr>
+                    <tr> <td> PlayerRankings </td> </tr>
+                    <tr> <td> PrivateMessages </td> </tr>
+                    <tr> <td> QuickSmelt </td> </tr>
+                    <tr> <td> QuickSort </td> </tr>
+                    <tr> <td> RaidNotice </td> </tr>
+                    <tr> <td> RandomSpawns </td> </tr>
+                    <tr> <td> ResearchBlock </td> </tr>
+                    <tr> <td> RidableHorseOptions </td> </tr>
+                    <tr> <td> ServerInfo </td> </tr>
+                    <tr> <td> ServerRewards </td> </tr>
+                    <tr> <td> SignArtist </td> </tr>
+                    <tr> <td> Skinbox </td> </tr>
+                    <tr> <td> StackSizeController </td> </tr>
+                    <tr> <td> TimedExecute </td> </tr>
+                    <tr> <td> TimeofDay </td> </tr>
+                    <tr> <td> TrophySigns </td> </tr>
+                    <tr> <td> UpgradeWorkbenches </td> </tr>
+                    <tr> <td> WeaponDamageScaler </td> </tr>
+                    <tr> <td> WipeKits </td> </tr>
+                  </tbody>
+                  </div>
+              </table>
+              </div>
+              <div className="col-lg-5">
+                <table class="table table-hover">
+                  <thead className="text-center h5">
+                      <tr>
+                          <th>Player Ranks</th>
+                      </tr>
+                  </thead>
+                  <div className="pluglist" id="style-1">
+                  <tbody className="tableadjust">
+                        <tr> 
+                          <td>Caveman</td> 
+                          <td className="text-right">1 hour</td> 
+                        </tr>
+                        <tr> 
+                          <td>Forager</td> 
+                          <td className="text-right">10 hours</td> 
+                        </tr>
+                        <tr> 
+                          <td>Serf</td>
+                          <td className="text-right">25 hours</td>
+                        </tr>
+                        <tr> 
+                          <td>Peasant</td>
+                          <td className="text-right">50 hours</td>
+                        </tr>
+                        <tr> 
+                          <td>Hunter</td>
+                          <td className="text-right">100 hours</td>
+                        </tr>
+                        <tr> 
+                          <td>Squire</td>
+                          <td className="text-right">200 hours</td>
+                        </tr>
+                        <tr> 
+                          <td>Knight</td>
+                          <td className="text-right">300 hours</td>
+                        </tr>
+                        <tr>
+                          <td>Constable</td>
+                          <td className="text-right">500 hours</td>
+                        </tr>
+                        <tr>
+                          <td>Duke</td>
+                          <td className="text-right">650 hours</td>
+                        </tr>
+                        <tr>
+                          <td>Sage</td>
+                          <td className="text-right">800 hours</td>
+                        </tr>
+                        <tr>
+                          <td>Monarch</td>
+                          <td className="text-right">1000 hours</td>
+                        </tr>
+                        <tr>
+                          <td>Prince</td>
+                          <td className="text-right">1300 hours</td>
+                        </tr>
+                        <tr>
+                          <td>Emperor</td>
+                          <td className="text-right">1500 hours</td>
+                        </tr>
+                        <tr>
+                          <td>God</td>
+                          <td className="text-right">2000 hours</td>
+                        </tr>
+                  </tbody>
+                  </div>
+                </table>
+              </div>
+
+            </div>
+
+          </section>
       </div>
 
 
       <div className="donate container-fluid vh-100">
 
         <div className="row justify-content-md-center pt-3">
-          <h1 className="col-lg-12 text-center display-3">Donator Packages</h1><br/>
+          <h1 className="col-lg-12 text-center display-1 font-weight-bold">Donator Packages</h1><br/>
           <p className="fineprint">*all donations go towards improving the server</p>
         </div>
 
         <div className="row justify-content-md-center h-50 mt-5">
 
-          <section className="col-lg-3">
+          <section className="col-lg-3 p-2 mr-4">
           <div className="p-4 border bg-light shadow h-100">
             <h3>D5: Connoisseur</h3>
             <p> The Starter Package</p>
@@ -174,7 +327,7 @@ function App() {
           </div>
           </section>
 
-          <section className="col-lg-3">
+          <section className="col-lg-3 p-2 mr-4">
           <div className="p-4 border bg-light shadow h-100">
             <h3>D10: Gladiator</h3>
             <p>Better, Faster, Stronger</p>
@@ -187,7 +340,7 @@ function App() {
           </div>
           </section>
 
-          <section className="col-lg-3">
+          <section className="col-lg-3 p-2 mr-4">
           <div className="p-4 border bg-light shadow h-100">
             <h3>D15: King of Kings</h3>
             <p> The Boss Package</p>
@@ -226,7 +379,6 @@ function App() {
           <p className="copyright col-lg-12 text-center mt-0">Created with &hearts; by LionCoded &copy; 2020 </p>
           
         </div>
-
 
       </div>
 
