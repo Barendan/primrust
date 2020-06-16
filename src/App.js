@@ -1,54 +1,16 @@
-import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React from 'react'
+import NavbarComponent from './components/Navbar'
 
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 function App() {
+
+  
+
   return (
     <div className="App">
-
-      <nav aria-label="main navigation" className="navbar navbar-expand-lg navbar-dark fixed-top" id="menu5">
-        <a href="/" className="navbar-brand">
-          <img src="https://files.facepunch.com/s/c0444ba57c9a.svg" alt="Rust" width="112" height="28"/>
-        </a>
-
-        <button className="navbar-toggler" 
-                type="button" 
-                data-toggle="collapse"
-                data-target="#navbarSupportedContent" 
-                aria-controls="navbarSupportedContent" 
-                aria-expanded="false" 
-                aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
-
-        <div className="collapse navbar-collapse"
-             id="navbarSupportedContent">
-          <ul className="navbar-nav ml-auto">
-            <li className="nav-item">
-              <a href="/blog/" className="nav-link">
-                <span className="text-center">Discord</span>
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="https://store.facepunch.com/" className="nav-link">
-                <span className="text-center">Features</span>
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="/changes/" className="nav-link">
-                <span className="text-center">Mods</span>
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="/console" className="nav-link">
-                <span className="text-center">Donate</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-
-      </nav>
+      <NavbarComponent />
 
       <div className="container-fluid vh-100 splash">
 
@@ -78,7 +40,7 @@ function App() {
       </div>
 
       <div className="container-fluid bg-dark discord">
-        
+        <b className="anchor" id="discord"></b>
         <div className="row">
           <div className="col-12 py-4">
             <h1 className="title">Discord</h1>
@@ -115,7 +77,8 @@ function App() {
 
       </div>
 
-      <div className="container-fluid generalinfo">
+      <div className="container-fluid features">
+          <b className="anchor" id="features"></b>
 
           <section className="pt-3 ss-style-zigzag">
             <h2 className="title">Features</h2>
@@ -162,7 +125,7 @@ function App() {
       
       </div>
 
-      <div className="container-fluid mods">
+      <div className="container-fluid mods" id="modified">
 
           <section className="ss-style-boxes">
             <h2 className="title">Modified</h2>
@@ -296,9 +259,10 @@ function App() {
       </div>
 
       <div className="container-fluid donate">
+        <b className="anchor" id="donate"></b>
         <h1 className="title pt-3">Donator Packages</h1>
-        <div className="row my-5">
 
+        <div className="row my-5">
           <section className="col-lg-3 col-12 card-holder">
             <div className="donate-card conno">
               <h2>Connoisseur</h2>
@@ -310,7 +274,7 @@ function App() {
                 <li>EnhancedHammer</li>
                 <li>Unbreakable Torch</li>
               </ul>
-              <div className="text-center price">$5.00 Donation</div>
+              <a href="http://primrust.tebex.io"><div className="price">Donate $5.00</div></a>
             </div>
           </section>
 
@@ -323,7 +287,7 @@ function App() {
                 <li>Colored Name</li>
                 <li>Knock Knock</li>
               </ul>
-              <div className="text-center price">$10.00 Donation</div>
+              <a href="http://primrust.tebex.io"><div className="price">Donate $10.00</div></a>
             </div>
           </section>
 
@@ -337,10 +301,27 @@ function App() {
                 <li>Quicksort</li>
                 <li>Pet</li>
               </ul>
-              <div className="text-center price">$15.00 Donation</div>
+              <a href="http://primrust.tebex.io">
+                <div className="price">Donate $15.00</div>
+              </a>
             </div>
           </section>
 
+          <section className="col-12 card-holder">
+              <div className="buypoints loot">
+                  <h2>Bag of Coin</h2>
+                  <span>Elevate Your Wealth</span>
+                  <li>500 RP Points</li>
+                  <a href="http://primrust.tebex.io">
+                    <div className="points-price">
+                      Donate $5.00
+                    </div>
+                  </a>
+              </div>
+          </section>
+          <div className="col-12 fineprint">
+              *All donations are final. No refunds.
+          </div>
         </div>
 
         <div className="row p-md-5 mt-5">
