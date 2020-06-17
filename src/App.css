@@ -101,7 +101,13 @@ body, button, input, select, textarea {
 
 .discord li {
     color: #aaa;
+    font-size: 1.2rem;
     padding-bottom: 0.5rem;
+}
+
+.discord-holder {
+    width: 75%;
+    margin-bottom: 20%;
 }
 
 .discord-button {
@@ -185,12 +191,19 @@ body, button, input, select, textarea {
     font-weight: 600;
 }
 
+.info-container {
+    background: #0000002e;
+}
 
-
-
+.info {
+    color: #212529;
+    padding: 2rem 1rem;
+    font-size: 0.9rem;
+    text-align: justify;
+}
 
 .pluglist {
-    max-height: 400px;
+    max-height: 380px;
     overflow-y: scroll;
 }
 
@@ -232,20 +245,22 @@ body, button, input, select, textarea {
 }
 
 .donate .title {
-    font-size: 4.3rem;
+    font-size: 4rem;
     font-weight: 600;
     text-align: center;
     text-shadow: 3px 4px 3px #000;
 }
 
 .card-holder {
-    /*color: #444;*/
+    display: flex;
+    justify-content: center;
     padding: 1rem 2rem;
 }
 
 .donate-card {
     background-color: #333;
     min-height: 360px;
+    width: 300px;
     padding: 1rem 1rem;
     text-align: center;
     border: 1px solid #000;
@@ -264,6 +279,7 @@ body, button, input, select, textarea {
 }
 
 .donate ul {
+    height: 65%;
     padding-top: 2rem;
     text-align: left;
     list-style: circle;
@@ -274,13 +290,11 @@ body, button, input, select, textarea {
 }
 
 .price {
-    position: absolute;
-    bottom: 3rem;
-    left: 5rem;
-    width: 55%;
+    display: inline-block;
     background: #ffffff5c;
     color: #b5ffc6;
-    font-size: 1.5rem;
+    width: 10rem;
+    font-size: 1.3rem;
     font-family: Arial, Helvetica, sans-serif;
     border: 1px outset white;
     cursor: pointer;
@@ -315,7 +329,7 @@ body, button, input, select, textarea {
 
 .buypoints {
     background-color: #333;
-    /*min-height: 360px;*/
+    width: 300px;
     padding: 1rem 1rem;
     text-align: center;
     border: 1px solid #000;
@@ -329,7 +343,7 @@ body, button, input, select, textarea {
 }
 
 .buypoints li {
-    padding: 1rem 0rem 0rem 1.5rem;
+    padding: 0.5rem 3rem;
     list-style: circle;
     text-align: left;
 }
@@ -338,17 +352,18 @@ body, button, input, select, textarea {
     display: inline-block;
     background: #ffffff5c;
     color: #b5ffc6;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 2rem 0rem 1rem 0rem;
+    margin: 1rem 0rem 0rem 0rem;
     padding: 0rem 1rem;
     border: 1px outset white;
     cursor: pointer;
     transition: color 500ms, background 500ms;
 }
 
-
 .fineprint {
+    display: flex;
+    justify-content: center;
     font-size: 0.7rem;
     padding-left: 2rem;
 }
@@ -419,39 +434,70 @@ hr {
 
 /*// Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
-    html {
-        font-size: 12px;
+    .discord-holder {
+        width: 55%;
+        margin-bottom: 10%;
     }
-  
+    .discord li {
+        font-size: 1.4rem;
+        letter-spacing: 2px;
+    }
 }
 
 /*// Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
     html {
-        font-size: 14px;
+        font-size: 18px;
+    }
+    .discord-image {
+        min-height: 350px;
+    }
+    .discord-holder {
+        margin-top: 5%;
+        margin-bottom: 0%;
     }
     .sociallinks .link {
         color: white;
     }
     .price {
-        color: transparent;
+        font-size: 1rem;
+        /*color: transparent;*/
+    }
+    .discord ul {
+        padding: 3% 0rem 0rem 10%;
+    }
+    .discord li {
+        font-size: 1rem;
+        letter-spacing: 0px;
+        padding-bottom: 8%;
+    }
+    .info-container {
+        margin-bottom: 3rem !important;
+    }
+    .donate-card {
+        min-width: 240px;
+    }
+    .donate-card h2 {
+        font-size: 1.7rem;
+    }
+    .donate-card ul {
+        font-size: 0.9rem;
+        padding-left: 2rem;
     }
     .donate-card:hover {
         border: 1px solid #fff;
         cursor: pointer;
     }
-
     .donate-card:hover > .price {
         background: transparent;
-        color: white;
+        color: #fff;
     }
-
 }
 
 /*// Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
     html {
-        font-size: 16px;
+        font-size: 20px;
     }
 
 }

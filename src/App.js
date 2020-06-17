@@ -22,7 +22,7 @@ function App() {
         </div>
 
         <div className="row h-100 d-flex align-content-end pb-5">
-          <div className="col-lg-6 offset-lg-6 col-12 pl-4">
+          <div className="col-md-6 offset-md-6 col-sm-7 offset-sm-5 col-12 pl-4">
 
             <h1 className="title">
               Survive, Adapt &amp; Conquer
@@ -41,18 +41,17 @@ function App() {
 
       <div className="container-fluid bg-dark discord">
         <b className="anchor" id="discord"></b>
-        <div className="row">
+        <div className="row flex-md-row-reverse px-md-3">
           <div className="col-12 py-4">
             <h1 className="title">Discord</h1>
           </div>
 
-          <div className="col-lg-9 col-12 p-1">
+          <div className="col-lg-9 col-md-8 col-12 p-1">
             <img src="/images/discordfull.png" className="discord-image" alt="discord application"/>
           </div>
 
-          <div className="col-lg-3 col-12 p-1">
+          <div className="col-lg-3 col-md-4 col-12 p-1">
             <h3 className="subtitle d-none">Come and Chat</h3>
-            
             <ul>
               <li>Wipe Info</li>
               <li>Find a Group</li>
@@ -63,16 +62,16 @@ function App() {
               <li>Latest Updates</li>
               <li>and so much more...</li>
             </ul>
+          </div>
 
-            <div className="col-12 d-flex justify-content-center">
-              <a href="http://bit.do/primrust" className="w-75">
-                <button className="discord-button">
-                  Open the Discord
-                </button>
-              </a>
-            </div>
+          <div className="col-12 d-flex justify-content-center">
+            <a href="http://bit.do/primrust" className="discord-holder">
+              <button className="discord-button">
+                Open the Discord
+              </button>
+            </a>
+          </div>
 
-         </div>
         </div>
 
       </div>
@@ -129,9 +128,15 @@ function App() {
 
           <section className="ss-style-boxes">
             <h2 className="title">Modified</h2>
-            <div className="row py-5">
+            <div className="row pt-4 pb-5">
 
-              <div className="col-lg-5 col-12 px-4">
+              <div className="col-12 my-3 info-container">
+                  <p class="info">
+                    Submerge into the Dark Ages and rise in fame and glory! Our goal is to bring you the optimal gaming experience. We do this by being flexible and making changes that encourage balanced gameplay. We've included many quality of life upgrades. Even though we are in the Dark Ages, doesn't mean you can't live your best life! Learn more below.
+                  </p>
+              </div>
+
+              <div className="col-md-6 col-12 px-4">
                 <h2 className="mods-subtitle">Extras</h2>
                 <div className="pluglist" id="style-1">
                   <table className="table table-hover table-striped">
@@ -187,7 +192,7 @@ function App() {
                 <span className="help-text"></span>
               </div>
 
-              <div className="col-lg-5 col-12 mt-5 px-4">
+              <div className="col-md-6 col-12 mt-md-0 mt-5 px-4">
                   <h2 className="mods-subtitle">Player Ranks</h2>
                   <div className="pluglist" id="style-1">
                     <table className="table table-hover table-striped">
@@ -262,8 +267,8 @@ function App() {
         <b className="anchor" id="donate"></b>
         <h1 className="title pt-3">Donator Packages</h1>
 
-        <div className="row my-5">
-          <section className="col-lg-3 col-12 card-holder">
+        <div className="row my-5 d-flex justify-content-around">
+          <section className="col-lg-3 col-md-3 col-12 card-holder">
             <div className="donate-card conno">
               <h2>Connoisseur</h2>
               <span> The Starter Package</span>
@@ -278,7 +283,7 @@ function App() {
             </div>
           </section>
 
-          <section className="col-lg-3 col-12 card-holder">
+          <section className="col-lg-3 col-md-3 col-12 card-holder">
             <div className="donate-card gladiator">
               <h2>Gladiator</h2>
               <span>Better, Faster, Stronger</span>
@@ -291,7 +296,7 @@ function App() {
             </div>
           </section>
 
-          <section className="col-lg-3 col-12 card-holder">
+          <section className="col-lg-3 col-md-3 col-12 card-holder">
             <div className="donate-card king">
               <h2>King of Kings</h2>
               <span> The Boss Package</span>
@@ -309,9 +314,9 @@ function App() {
 
           <section className="col-12 card-holder">
               <div className="buypoints loot">
-                  <h2>Bag of Coin</h2>
-                  <span>Elevate Your Wealth</span>
-                  <li>500 RP Points</li>
+                  <h2>Sack of Coin</h2>
+                  <span className="d-none">Elevate Your Wealth</span>
+                  <li>1000RP Points</li>
                   <a href="http://primrust.tebex.io">
                     <div className="points-price">
                       Donate $5.00
@@ -324,7 +329,7 @@ function App() {
           </div>
         </div>
 
-        <div className="row p-md-5 mt-5">
+        <div className="row px-md-5 pb-md-2 mt-5">
           <div className="col-12 sociallinks">
 
             <a className="link youtube" href="https://www.youtube.com/channel/UC0vL7CHL6UOgkEA0ygbkOzA" title="Primitive on youtube" target="_blank" rel="noopener noreferrer"><svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 576 512" className="icon" height="1em" width="1em"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg>
