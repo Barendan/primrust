@@ -77,9 +77,9 @@ body, button, input, select, textarea {
 }
 
 .discord .title {
-    font-size: 4.5rem;
+    font-size: 4.6rem;
     text-align: center;
-    text-shadow: 3px 4px 3px #000;
+    text-shadow: 1px 3px 2px #000;
     font-weight: 600;
 }
 
@@ -96,12 +96,12 @@ body, button, input, select, textarea {
 }
 
 .discord ul {
-    padding: 2rem 3rem 1rem 3rem;
+    padding: 1.5rem 3rem 1rem 3rem;
 }
 
 .discord li {
     color: #aaa;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     padding-bottom: 0.5rem;
 }
 
@@ -117,6 +117,11 @@ body, button, input, select, textarea {
     width: 100%;
     border-radius: 2px;
     border-color: #5d77d4;
+    opacity: 0.9;
+}
+
+.discord-button:hover {
+    opacity: 1.0;
 }
 
 /*=====================================================*/
@@ -125,12 +130,13 @@ body, button, input, select, textarea {
     position: relative;
     background: #2980b9;
     text-align: center;
+    padding: 0rem;
 }
 
 .features .title {
-    font-size: 4.5rem;
+    font-size: 4.3rem;
     text-align: center;
-    text-shadow: 3px 4px 3px #000;
+    text-shadow: 0px 1px 1px #000;
     font-weight: 600;
 }
 
@@ -141,13 +147,13 @@ body, button, input, select, textarea {
 }
 
 .subtext {
-    font-size: 12px;
+    font-size: 0.8rem;
     letter-spacing:1px;
 }
 
 
 .features section::after, .features section::before,
-.mods section::before, .mods section::after {
+.clips section::before, .clips section::after {
     position: absolute;
     content: '';
     pointer-events: none;
@@ -181,13 +187,13 @@ body, button, input, select, textarea {
 .mods {
     position: relative;
     background: #ADD7F6;
-    padding: 4rem 1rem;
+    padding: 4rem 0rem;
 }
 
 .mods .title {
-    font-size: 4.5rem;
+    font-size: 4.3rem;
     text-align: center;
-    text-shadow: 3px 4px 3px #000;
+    text-shadow: 0px 1px 1px #000;
     font-weight: 600;
 }
 
@@ -197,14 +203,21 @@ body, button, input, select, textarea {
 
 .info {
     color: #212529;
-    padding: 2rem 1rem;
     font-size: 0.9rem;
     text-align: justify;
+    line-height: 1.2rem;
+    letter-spacing: 1px;
+    padding: 1.5rem 1rem;
 }
 
 .pluglist {
     max-height: 380px;
+    border: 1px solid #ababab;
     overflow-y: scroll;
+}
+
+.table {
+    background: #f5f5f5bd;
 }
 
 .tableadjust {
@@ -232,9 +245,16 @@ body, button, input, select, textarea {
     width: 100%;
     height: 30px;
     background-image: -webkit-gradient(linear, 100% 0, 0 100%, color-stop(0.5, #ADD7F6), color-stop(0.5, #ADD7F6));
-    background-image: linear-gradient(to right, #5f5f5f 50%, #ADD7F6 50%);
+    background-image: linear-gradient(to right, #5f5f5f 50%, #FFF 50%);
     -webkit-background-size: 130px 100%;
     background-size: 77px 100%;
+}
+
+/*=====================================================*/
+/*=====================================================*/
+.clips {
+    position: relative;
+    padding: 2rem 0.5rem 3rem;
 }
 
 /*=====================================================*/
@@ -242,13 +262,14 @@ body, button, input, select, textarea {
 .donate {
     background-color: #5f5f5f;
     min-height: 95vh;
+    padding: 0rem 0.5rem;
 }
 
 .donate .title {
     font-size: 4rem;
     font-weight: 600;
-    text-align: center;
-    text-shadow: 3px 4px 3px #000;
+    /*text-align: center;*/
+    text-shadow: 0px 1px 1px #000;
 }
 
 .card-holder {
@@ -294,7 +315,7 @@ body, button, input, select, textarea {
     background: #ffffff5c;
     color: #b5ffc6;
     width: 10rem;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-family: Arial, Helvetica, sans-serif;
     border: 1px outset white;
     cursor: pointer;
@@ -343,16 +364,15 @@ body, button, input, select, textarea {
 }
 
 .buypoints li {
-    padding: 0.5rem 3rem;
+    padding: 0.5rem 0rem;
     list-style: circle;
-    text-align: left;
 }
 
 .points-price {
     display: inline-block;
     background: #ffffff5c;
     color: #b5ffc6;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-family: Arial, Helvetica, sans-serif;
     margin: 1rem 0rem 0rem 0rem;
     padding: 0rem 1rem;
@@ -431,16 +451,57 @@ hr {
 /*=====================================================*/
 /*=====================================================*/
 
+/*// Smallest devices (Galaxy S8, 360px and up)*/
+@media (min-width: 360px) {
+    .splash-text {
+        width: 19rem;
+        margin: 0 auto;
+    }
+    .discord ul {
+       padding: 5% 10%;
+    }
+    .features {
+        padding: 0px 15px;
+    }
+    .subtext {
+        padding: 0% 5%;
+    }
+    .list-holder {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+}
 
 /*// Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
     .discord-holder {
         width: 55%;
-        margin-bottom: 10%;
     }
     .discord li {
-        font-size: 1.4rem;
-        letter-spacing: 2px;
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+    }
+    .features {
+        padding: 0rem 1rem;
+    }
+    .features .title {
+        font-size: 4.5rem;
+    }
+    .subtext {
+        padding: 0%;
+    }
+    .mods {
+        padding: 4rem 1rem;
+    }
+    .mods .title {
+        font-size: 4.5rem;
+    }
+    .pluglist {
+        max-width: 320px;
+    }
+    .donate {
+        padding: 0rem 1rem;
     }
 }
 
@@ -453,15 +514,9 @@ hr {
         min-height: 350px;
     }
     .discord-holder {
+        width: 70%;
         margin-top: 5%;
         margin-bottom: 0%;
-    }
-    .sociallinks .link {
-        color: white;
-    }
-    .price {
-        font-size: 1rem;
-        /*color: transparent;*/
     }
     .discord ul {
         padding: 3% 0rem 0rem 10%;
@@ -471,8 +526,33 @@ hr {
         letter-spacing: 0px;
         padding-bottom: 8%;
     }
+    .subtext {
+        font-size: 0.7rem;
+    }
+    .mods {
+        background-image: url(/images/prim6.png);
+        background-repeat: no-repeat;
+        background-size: 220% 100%;
+        background-position: 60% 0%;
+        background-color: #a8ad82;
+        background-blend-mode: multiply;
+    }
     .info-container {
-        margin-bottom: 3rem !important;
+        background: #00000094;
+    }
+    .info {
+        color: inherit;
+        font-size: inherit;
+        line-height: inherit;
+    }
+
+
+    .sociallinks .link {
+        color: white;
+    }
+    .price {
+        font-size: 1rem;
+        /*color: transparent;*/
     }
     .donate-card {
         min-width: 240px;
@@ -499,11 +579,34 @@ hr {
     html {
         font-size: 20px;
     }
-
+    .discord-image {
+        max-height: 470px;
+    }
+    .discord ul {
+        padding: 10% 0rem 0rem 10%;
+    }
+    .discord li {
+        font-size: 1.1rem;
+    }
+    .discord-holder {
+        width: 70%; 
+        margin-top: 2rem;
+        margin-bottom: 6rem;
+    }
+    .mods-holder {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    .pluglist {
+        max-width: inherit;
+    }
 }
 
 /*// Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
-
+    .discord-inner {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
     
 }

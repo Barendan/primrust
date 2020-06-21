@@ -14,7 +14,7 @@ function App() {
 
       <div className="container-fluid vh-100 splash">
 
-        <div className="asset-container video-overlay">
+        <div className="asset-container">
           <video preload="auto" autoPlay="autoplay" muted="muted" loop="loop" playsInline="" className="bg-media-hero-video">
               <source type="video/mp4" src="https://files.facepunch.com/paddy/20190514/rust_bgvideo_website_003_noaudio.mp4"/>
               <source type="video/webm" src="https://files.facepunch.com/paddy/20190516/rust_bgvideo_website_003.webm"/>
@@ -22,35 +22,36 @@ function App() {
         </div>
 
         <div className="row h-100 d-flex align-content-end pb-5">
-          <div className="col-md-6 offset-md-6 col-sm-7 offset-sm-5 col-12 pl-4">
-
-            <h1 className="title">
-              Survive, Adapt &amp; Conquer
-            </h1>
-            <p className="subtitle pr-3">Everything wants you to die. You need to find food, shelter and weapons to prevent it.</p>
-            <a href="http://store.steampowered.com/app/252490/Rust/" className="button is-primary is-medium">
-              <span className="icon is-small">
-                <i className="mdi mdi-steam"></i></span>
-              <span>View Rust on Steam</span>
-            </a>
-
+          <div className="col-md-6 offset-md-6 col-sm-7 offset-sm-5 col-12 pl-sm-4">
+            <div className="splash-text">
+              <h1 className="title">
+                Survive, Adapt &amp; Conquer
+              </h1>
+              <p className="subtitle pr-3">Everything wants you to die. You need to find food, shelter and weapons to prevent it.</p>
+              <a href="http://store.steampowered.com/app/252490/Rust/" className="button is-primary is-medium">
+                <span className="icon is-small">
+                  <i className="mdi mdi-steam"></i></span>
+                <span>View Rust on Steam</span>
+              </a>
+            </div>
           </div>
-        </div>
 
+        </div>
       </div>
 
       <div className="container-fluid bg-dark discord">
         <b className="anchor" id="discord"></b>
-        <div className="row flex-md-row-reverse px-md-3">
-          <div className="col-12 py-4">
+        <div className="row flex-md-row-reverse px-md-3 discord-inner">
+          
+          <div className="col-12 py-lg-2 py-4">
             <h1 className="title">Discord</h1>
           </div>
 
-          <div className="col-lg-9 col-md-8 col-12 p-1">
+          <div className="col-lg-9 col-md-8 col-12 py-md-4 p-1">
             <img src="/images/discordfull.png" className="discord-image" alt="discord application"/>
           </div>
 
-          <div className="col-lg-3 col-md-4 col-12 p-1">
+          <div className="col-lg-3 col-md-4 col-12 py-md-4 p-1">
             <h3 className="subtitle d-none">Come and Chat</h3>
             <ul>
               <li>Wipe Info</li>
@@ -73,70 +74,66 @@ function App() {
           </div>
 
         </div>
-
       </div>
 
       <div className="container-fluid features">
           <b className="anchor" id="features"></b>
-
           <section className="pt-3 ss-style-zigzag">
             <h2 className="title">Features</h2>
-            <div className="row p-4">
+            <div className="row pb-lg-5 p-4">
 
-              <div className="col-sm-6 col-md-4 pb-4">
+              <div className="col-md-4 col-sm-6 pb-4">
                 <img className="icon mb-3" src="images/system.svg" alt="Icon"/>
-                <h3 className="display-5">Dedicated System</h3>
+                <h3 className="display-5">Fast Server</h3>
                 <p className="subtext">Our Server runs on a Dedicated machine with the top hardware. State of the Art DDOS protection to ensure that you see 0 downtime.</p>
               </div>
 
-              <div className="col-sm-6 col-md-4 pb-4">
+              <div className="col-md-4 col-sm-6 pb-4">
                 <img className="icon mb-3" src="images/crown.svg" alt="Icon"/>
-                <h3 className="display-5">King & Lords</h3>
+                <h3 className="display-5">King / Lords</h3>
                 <p className="subtext">Heavy lies the head that wears the crown. Ascend the throne, collect taxes from the peasants and defend your title!</p>
               </div>
 
-              <div className="col-sm-6 col-md-4 pb-4">
+              <div className="col-md-4 col-sm-6 pb-4">
                 <img className="icon mb-3" src="images/roam.svg" alt="Icon"/>
                 <h3 className="display-5">Group Limit</h3>
                 <p className="subtext">When roaming outside of your base, the max group limit is 4. This rule does not apply when you are within TC radius of your base.</p>
               </div>
 
-              <div className="col-sm-6 col-md-4 pb-4">
+              <div className="col-md-4 col-sm-6 pb-4">
                 <img className="icon mb-3" src="images/archery.png" alt="Icon"/>
-                <h3 className="display-5">Bow/Melee Combat</h3>
+                <h3 className="display-5">Bow / Melee</h3>
                 <p className="subtext">Immerse yourself in the Medieval times. Draw back your bowstring and shoot your enemies from a distance or rush in and clobber them with a mace.</p>
               </div>
 
-              <div className="col-sm-6 col-md-4 pb-4">
+              <div className="col-md-4 col-sm-6 pb-4">
                 <img className="icon mb-3" src="images/treasure.png" alt="Icon"/>
                 <h3 className="display-5">Improved Loot</h3>
                 <p className="subtext">Crates, Airdrops, and barrel loot has been improved. No more useless blueprints or junk items. Use the kit command to receive rp or electric bps.</p>
               </div>
 
-              <div className="col-sm-6 col-md-4 pb-3">
+              <div className="col-md-4 col-sm-6 pb-3">
                 <img className="icon mb-3" src="images/mountain.png" alt="Icon"/>
-                <h3 className="display-5">Player Leaderboard</h3>
+                <h3 className="display-5">Leaderboard</h3>
                 <p className="subtext">Track your progress in various categories and make your way to the top of the charts. Fame and glory await you!</p>
               </div>
 
             </div>
           </section>
-      
       </div>
 
       <div className="container-fluid mods" id="modified">
-
-          <section className="ss-style-boxes">
+          <section>
             <h2 className="title">Modified</h2>
-            <div className="row pt-4 pb-5">
+            <div className="row pt-4 pb-5 mods-holder">
 
-              <div className="col-12 my-3 info-container">
-                  <p class="info">
-                    Submerge into the Dark Ages and rise in fame and glory! Our goal is to bring you the optimal gaming experience. We do this by being flexible and making changes that encourage balanced gameplay. We've included many quality of life upgrades. Even though we are in the Dark Ages, doesn't mean you can't live your best life! Learn more below.
+              <div className="col-12 mx-lg-auto my-3 px-4 info-container">
+                  <p className="info">
+                    The Primitive world is tailored to bring you the most optimal gaming experience. We make dynamic changes that encourage balanced gameplay, including many quality of life upgrades. 
                   </p>
               </div>
 
-              <div className="col-md-6 col-12 px-4">
+              <div className="col-sm-6 col-12 mt-4 px-sm-3 px-5 list-holder">
                 <h2 className="mods-subtitle">Extras</h2>
                 <div className="pluglist" id="style-1">
                   <table className="table table-hover table-striped">
@@ -192,7 +189,7 @@ function App() {
                 <span className="help-text"></span>
               </div>
 
-              <div className="col-md-6 col-12 mt-md-0 mt-5 px-4">
+              <div className="col-sm-6 col-12 mt-4 px-sm-3 px-5 list-holder">
                   <h2 className="mods-subtitle">Player Ranks</h2>
                   <div className="pluglist" id="style-1">
                     <table className="table table-hover table-striped">
@@ -260,6 +257,86 @@ function App() {
 
             </div>
           </section>
+      </div>
+
+      <div className="container-fluid clips">
+
+        <section className="ss-style-boxes">
+
+          <b className="anchor" id="clips"></b>
+          <h1 className="title">Media</h1>
+
+          <div className="row">
+              <div className="col-12 col-md-6 col-lg-4 pt-4">
+                  <figure className="figure">
+                      <img src="/images/rust_village2.png" className="figure-img img-fluid img-thumbnail" alt="Figure image"/>
+                      <figcaption className="figure-caption">
+                          <h6>Town of Valenciaga <small>(10-09-2019)</small></h6>
+                          <p>Built within a valley, the town of Valenciaga was fully encompassed by a massive wall and powered mainly by windmills.</p>
+                      </figcaption>
+                  </figure>
+              </div>
+
+              <div className="col-12 col-md-6 col-lg-4 pt-4">
+                  <figure className="figure">
+                      <div className="embed-responsive embed-responsive-16by9 figure-img">
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/wYWS1FY0ZeQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                      </div>
+                      <figcaption className="figure-caption">
+                        <h6>Primitive Trailer <small>(03-26-2020)</small></h6>
+                        <p>Enter a realm where King and Lords vie for control. Adventure to find rare items and build your wealth. Become a renowned builder, forge alliances, and rise to the top.</p>
+                      </figcaption>
+                  </figure>
+              </div>
+
+              <div className="col-12 col-md-6 col-lg-4 pt-4">
+                  <figure className="figure">
+                      <div className="embed-responsive embed-responsive-16by9 figure-img">
+                          <iframe className="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/-xk9EcROMbw" frameBorder="0" allowFullScreen></iframe>
+                      </div>
+                      <figcaption className="figure-caption">
+                          <h6>Castle Under Siege <small>(06-09-2020)</small></h6>
+                          <p>Castle Starlord was bombarded with a surprise attack by DOGs clan. Few Knights were available to alleviate the seige and so the sleeper Kashmar was activated. </p>
+                      </figcaption>
+                  </figure>
+              </div>
+
+              <div className="col-12 col-md-6 col-lg-4 pt-4">
+                <figure className="figure">
+                  <a href="#"><img src="/images/eoka_off.png" className="figure-img img-fluid img-thumbnail" alt="Figure image"/></a>
+                  <figcaption className="figure-caption">
+                    <h6>Eoka Roulette <small>(03-24-2020)</small></h6>
+                    <p>While a war raged outside, two men met face to face deep in the castle cellar. Both pulled out an Eoka loaded with just one shot. Only one man left that cellar alive...</p>
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div className="col-12 col-md-6 col-lg-4 pt-4">
+                  <figure className="figure">
+                      <div className="embed-responsive embed-responsive-4by3 figure-img">
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/-aUmdtZyOI8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                      </div>
+                      <figcaption className="figure-caption">
+                          <h6>Gladiator Arena <small>(06-17-2020)</small></h6>
+                          <p>A place for the top warriors to prove themselves. Everyone is welcome to participate but there can only be one victor.</p>
+                      </figcaption>
+                  </figure>
+              </div>
+
+              <div className="col-12 col-md-6 col-lg-4 pt-4">
+                  <figure className="figure">
+                      <div className="embed-responsive embed-responsive-4by3 figure-img">
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/n0bbt-WeiJE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      </div>
+                      <figcaption className="figure-caption">
+                          <h6>Solo Raiding <small>(12-31-2019)</small></h6>
+                          <p>The lone wolf hungers for treasure. Seems he is not the only one, as 3 more wolves come with blood on their minds. Who will come out victorious..</p>
+                      </figcaption>
+                  </figure>
+              </div>
+          </div>
+
+        </section>
 
       </div>
 

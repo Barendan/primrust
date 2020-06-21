@@ -28,6 +28,7 @@ const NavbarComponent = () => {
 					<Nav.Link href="#discord">Discord</Nav.Link>
 					<Nav.Link href="#features">Features</Nav.Link>
 					<Nav.Link href="#modified">Modified</Nav.Link>
+					<Nav.Link href="#clips">Media</Nav.Link>
 					<Nav.Link href="#donate">Donate</Nav.Link>
 				</Nav>
 			</Navbar.Collapse>
