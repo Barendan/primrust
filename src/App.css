@@ -12,6 +12,10 @@ body, button, input, select, textarea {
     box-sizing: border-box;
 }
 
+.justify-content-evenly {
+    justify-content: space-evenly;
+}
+
 .App {
     overflow: hidden;
     color: #f6eae1;
@@ -77,14 +81,14 @@ body, button, input, select, textarea {
 }
 
 .discord .title {
-    font-size: 4.6rem;
+    font-size: 18vw;
     text-align: center;
-    text-shadow: 1px 3px 2px #000;
+    text-shadow: 0px 1px 1px #f6eae1;
     font-weight: 600;
+    color: transparent;
 }
 
 .discord-image {
-    /*height: 290px;*/
     width: 100%;
     box-shadow: 0px 0px 4px #111;
 }
@@ -134,10 +138,11 @@ body, button, input, select, textarea {
 }
 
 .features .title {
-    font-size: 4.3rem;
+    font-size: 18vw;
     text-align: center;
-    text-shadow: 0px 1px 1px #000;
+    text-shadow: 0px 1px 1px #f6eae1;
     font-weight: 600;
+    color: transparent;
 }
 
 .icon {
@@ -186,26 +191,32 @@ body, button, input, select, textarea {
 /*=====================================================*/
 .mods {
     position: relative;
-    background: #ADD7F6;
+    /*background: #ADD7F6;*/
     padding: 4rem 0rem;
+
+    background-image: url(/images/prim6.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 60% 0%;
+    background-color: #a8ad82;
+    background-blend-mode: multiply;
 }
 
 .mods .title {
-    font-size: 4.3rem;
+    font-size: 18vw;
     text-align: center;
-    text-shadow: 0px 1px 1px #000;
+    text-shadow: 0px 1px 1px #f6eae1;
     font-weight: 600;
+    color: transparent;
 }
 
 .info-container {
-    background: #0000002e;
+    background: #00000094;
 }
 
 .info {
-    color: #212529;
     font-size: 0.9rem;
     text-align: justify;
-    line-height: 1.2rem;
     letter-spacing: 1px;
     padding: 1.5rem 1rem;
 }
@@ -254,22 +265,42 @@ body, button, input, select, textarea {
 /*=====================================================*/
 .clips {
     position: relative;
-    padding: 2rem 0.5rem 3rem;
+    padding: 1rem 0.5rem 0rem;
+}
+
+.clips .title {
+    color: #645841;
+    font-size: 18vw;
+}
+
+.figure-caption h6 {
+    font-size: 1.1rem;
+}
+
+.figure-caption p {
+    font-size: 0.8rem;
 }
 
 /*=====================================================*/
 /*=====================================================*/
 .donate {
-    background-color: #5f5f5f;
+    background-color: #929292;
     min-height: 95vh;
-    padding: 0rem 0.5rem;
+    padding: 1rem 0.5rem 5rem;
+
+    background-image: url(https://www.myfreetextures.com/wp-content/uploads/2011/06/old-paper-with-partial-paisly-design.jpg);
+    background-size: 200%;
+    background-blend-mode: multiply;
 }
 
 .donate .title {
-    font-size: 4rem;
+    color: transparent;
+    padding-bottom: 1rem;
+    font-size: 18vw;
+    line-height: 16vw;
     font-weight: 600;
-    /*text-align: center;*/
-    text-shadow: 0px 1px 1px #000;
+    text-align: center;
+    text-shadow: 0px 1px 1px #fdf0d1;
 }
 
 .card-holder {
@@ -351,7 +382,7 @@ body, button, input, select, textarea {
 .buypoints {
     background-color: #333;
     width: 300px;
-    padding: 1rem 1rem;
+    padding: 0.5rem;
     text-align: center;
     border: 1px solid #000;
     box-shadow: 1px 3px 10px #222;
@@ -364,8 +395,9 @@ body, button, input, select, textarea {
 }
 
 .buypoints li {
-    padding: 0.5rem 0rem;
-    list-style: circle;
+    font-size: 1rem;
+    padding: 0.2rem 0rem 0rem;
+    list-style: none;
 }
 
 .points-price {
@@ -374,7 +406,7 @@ body, button, input, select, textarea {
     color: #b5ffc6;
     font-size: 1.1rem;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 1rem 0rem 0rem 0rem;
+    margin: 0.5rem 0rem 0.3rem 0rem;
     padding: 0rem 1rem;
     border: 1px outset white;
     cursor: pointer;
@@ -390,6 +422,11 @@ body, button, input, select, textarea {
 
 /*=====================================================*/
 /*=====================================================*/
+.social-holder {
+    background-color: #dedede;
+    padding-top: 1rem;
+}
+
 .sociallinks {
     display: inline-flex;
     width: 90%;
@@ -434,7 +471,7 @@ body, button, input, select, textarea {
 }
 
 hr {
-    background-color: #ffffff73;
+    background-color: #a7a7a7;
     width: 90%;
     height: 1px;
     margin: 0.5rem auto;
@@ -442,6 +479,7 @@ hr {
 }
 
 .copyright {
+    color: black;
     width: 100%;
     margin-bottom: 0.5rem;
     text-align: center;
@@ -470,7 +508,6 @@ hr {
         max-width: 400px;
         margin: 0 auto;
     }
-
 }
 
 /*// Small devices (landscape phones, 576px and up)*/
@@ -482,11 +519,15 @@ hr {
         font-size: 1.3rem;
         letter-spacing: 1px;
     }
+    .discord .title,
+    .features .title,
+    .mods .title,
+    .donate .title,
+    .clips .title {
+        font-size: 6rem;
+    }
     .features {
         padding: 0rem 1rem;
-    }
-    .features .title {
-        font-size: 4.5rem;
     }
     .subtext {
         padding: 0%;
@@ -494,14 +535,17 @@ hr {
     .mods {
         padding: 4rem 1rem;
     }
-    .mods .title {
-        font-size: 4.5rem;
-    }
     .pluglist {
         max-width: 320px;
     }
-    .donate {
-        padding: 0rem 1rem;
+    .donate .title {
+        line-height: 6rem;
+    }
+    .figure-caption h6 {
+        font-size: 1.4rem;
+    }
+    .donate .title {
+        padding-top: 1rem;
     }
 }
 
@@ -529,30 +573,17 @@ hr {
     .subtext {
         font-size: 0.7rem;
     }
-    .mods {
-        background-image: url(/images/prim6.png);
-        background-repeat: no-repeat;
-        background-size: 220% 100%;
-        background-position: 60% 0%;
-        background-color: #a8ad82;
-        background-blend-mode: multiply;
-    }
-    .info-container {
-        background: #00000094;
-    }
-    .info {
-        color: inherit;
-        font-size: inherit;
-        line-height: inherit;
-    }
-
 
     .sociallinks .link {
         color: white;
     }
-    .price {
+    .price,
+    .points-price {
         font-size: 1rem;
         /*color: transparent;*/
+    }
+    .donate-title {
+        padding-bottom: 1rem;
     }
     .donate-card {
         min-width: 240px;
@@ -567,10 +598,18 @@ hr {
     .donate-card:hover {
         border: 1px solid #fff;
         cursor: pointer;
+        z-index: 10;
     }
     .donate-card:hover > .price {
         background: transparent;
         color: #fff;
+    }
+    .buypoints {
+        width: initial;
+        padding: 0.6rem 1.5rem;
+    }
+    .buypoints h2 {
+        font-size: 1.7rem;
     }
 }
 
@@ -599,6 +638,12 @@ hr {
     }
     .pluglist {
         max-width: inherit;
+    }
+    .card-holder {
+        padding: 1rem 1.5rem;
+    }
+    .donate .title {
+        padding-bottom: 2.5rem;
     }
 }
 
