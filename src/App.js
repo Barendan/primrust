@@ -79,7 +79,7 @@ function App() {
           <b className="anchor" id="features"></b>
           <section className="pt-3 ss-style-zigzag">
             <h2 className="title">Features</h2>
-            <div className="row pb-lg-5 p-4">
+            <div className="row pb-lg-5 p-4 features-inner">
 
               <div className="col-md-4 col-sm-6 pb-4">
                 <img className="icon mb-3" src="images/system.svg" alt="Icon"/>
@@ -260,9 +260,9 @@ function App() {
 
       <div className="container-fluid donate">
         <b className="anchor" id="donate"></b>
-        <h1 className="title">Donator Packages</h1>
+        <h1 className="pt-3 title">Donator Packages</h1>
 
-        <div className="row mx-lg-auto d-flex justify-content-evenly">
+        <div className="row mx-lg-auto d-flex justify-content-evenly donate-inner">
           <section className="col-lg-4 col-md-3 col-12 card-holder">
             <div className="donate-card conno">
               <h2>Connoisseur</h2>
@@ -307,7 +307,7 @@ function App() {
             </div>
           </section>
 
-          <section className="col-12 card-holder">
+          <section className="col-12 pt-md-5 card-holder">
               <div className="buypoints loot">
                   <h2>Sack of Coin</h2>
                   <span className="d-none">Elevate Your Wealth</span>
@@ -334,7 +334,7 @@ function App() {
           <div className="row">
               <div className="col-12 col-md-6 col-lg-4 pt-3">
                   <figure className="figure">
-                      <img src="/images/rust_village2.png" className="figure-img img-fluid img-thumbnail" alt="Figure image"/>
+                      <img src="/images/rust_village2.png" className="figure-img img-fluid img-thumbnail" alt="village of valenciaga"/>
                       <figcaption className="figure-caption">
                           <h6>Town of Valenciaga <small>(10-09-2019)</small></h6>
                           <p>Built within a valley, the town of Valenciaga was fully encompassed by a massive wall and powered mainly by windmills.</p>
@@ -345,7 +345,7 @@ function App() {
               <div className="col-12 col-md-6 col-lg-4 pt-3">
                   <figure className="figure">
                       <div className="embed-responsive embed-responsive-16by9 figure-img">
-                          <iframe width="560" height="315" src="https://www.youtube.com/embed/wYWS1FY0ZeQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/wYWS1FY0ZeQ" title="trailer" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                       </div>
                       <figcaption className="figure-caption">
                         <h6>Primitive Trailer <small>(03-26-2020)</small></h6>
@@ -357,7 +357,7 @@ function App() {
               <div className="col-12 col-md-6 col-lg-4 pt-3">
                   <figure className="figure">
                       <div className="embed-responsive embed-responsive-16by9 figure-img">
-                          <iframe className="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/-xk9EcROMbw" frameBorder="0" allowFullScreen></iframe>
+                          <iframe className="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/-xk9EcROMbw" title="castle siege" frameBorder="0" allowFullScreen></iframe>
                       </div>
                       <figcaption className="figure-caption">
                           <h6>Castle Under Siege <small>(06-09-2020)</small></h6>
@@ -368,7 +368,7 @@ function App() {
 
               <div className="col-12 col-md-6 col-lg-4 pt-3">
                 <figure className="figure">
-                  <a href="#"><img src="/images/eoka_off.png" className="figure-img img-fluid img-thumbnail" alt="Figure image"/></a>
+                  <a href="#"><img src="/images/eoka_off.png" className="figure-img img-fluid img-thumbnail" alt="eoka battle"/></a>
                   <figcaption className="figure-caption">
                     <h6>Eoka Roulette <small>(03-24-2020)</small></h6>
                     <p>While a war raged outside, two men met face to face deep in the castle cellar. Both pulled out an Eoka loaded with just one shot. Only one man left that cellar alive...</p>
@@ -379,7 +379,7 @@ function App() {
               <div className="col-12 col-md-6 col-lg-4 pt-3">
                   <figure className="figure">
                       <div className="embed-responsive embed-responsive-16by9 figure-img">
-                          <iframe width="560" height="315" src="https://www.youtube.com/embed/-aUmdtZyOI8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/-aUmdtZyOI8" title="gladiator arena" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                       </div>
                       <figcaption className="figure-caption">
                           <h6>Gladiator Arena <small>(06-17-2020)</small></h6>
@@ -391,7 +391,7 @@ function App() {
               <div className="col-12 col-md-6 col-lg-4 pt-3">
                   <figure className="figure">
                       <div className="embed-responsive embed-responsive-16by9 figure-img">
-                          <iframe width="560" height="315" src="https://www.youtube.com/embed/n0bbt-WeiJE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/n0bbt-WeiJE" title="solo raiding" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                       </div>
                       <figcaption className="figure-caption">
                           <h6>Solo Raiding <small>(12-31-2019)</small></h6>

@@ -344,7 +344,7 @@ body, button, input, select, textarea {
 .price {
     display: inline-block;
     background: #ffffff5c;
-    color: #b5ffc6;
+    color: #fff2b0;
     width: 10rem;
     font-size: 1.1rem;
     font-family: Arial, Helvetica, sans-serif;
@@ -356,6 +356,8 @@ body, button, input, select, textarea {
 .price:hover,
 .points-price:hover {
     border-style: inset;
+    background-color: #ffffff91;
+    color: #ffe045;
 }
 
 .conno{
@@ -395,7 +397,7 @@ body, button, input, select, textarea {
 }
 
 .buypoints li {
-    font-size: 1rem;
+    font-size: 0.9rem;
     padding: 0.2rem 0rem 0rem;
     list-style: none;
 }
@@ -403,7 +405,7 @@ body, button, input, select, textarea {
 .points-price {
     display: inline-block;
     background: #ffffff5c;
-    color: #b5ffc6;
+    color: #fff2b0;
     font-size: 1.1rem;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0.5rem 0rem 0.3rem 0rem;
@@ -491,6 +493,16 @@ hr {
 
 /*// Smallest devices (Galaxy S8, 360px and up)*/
 @media (min-width: 360px) {
+    .nav-link {
+        font-size: 1.7rem;
+        letter-spacing: 4px;
+        border-bottom: 1px solid;
+        width: 10%;
+        transition: width 1s;
+    }
+    .nav-link.active, .nav-link:hover {
+        width: 40%;
+    }
     .splash-text {
         width: 19rem;
         margin: 0 auto;
@@ -554,6 +566,12 @@ hr {
     html {
         font-size: 18px;
     }
+    .nav-link {
+        width: auto;
+        font-size: 1.2rem;
+        letter-spacing: 0px;
+        border-bottom: 0px solid;
+    }
     .discord-image {
         min-height: 350px;
     }
@@ -573,17 +591,16 @@ hr {
     .subtext {
         font-size: 0.7rem;
     }
-
     .sociallinks .link {
         color: white;
     }
     .price,
     .points-price {
         font-size: 1rem;
-        /*color: transparent;*/
     }
-    .donate-title {
-        padding-bottom: 1rem;
+    .donate .title {
+        line-height: 5.5rem;
+        padding-bottom: 2.5rem;
     }
     .donate-card {
         min-width: 240px;
@@ -632,6 +649,10 @@ hr {
         margin-top: 2rem;
         margin-bottom: 6rem;
     }
+    .features-inner {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
     .mods-holder {
         max-width: 900px;
         margin: 0 auto;
@@ -639,11 +660,16 @@ hr {
     .pluglist {
         max-width: inherit;
     }
-    .card-holder {
-        padding: 1rem 1.5rem;
+    .donate-inner {
+        max-width: 970px;
+        margin: 0 auto;
     }
     .donate .title {
-        padding-bottom: 2.5rem;
+        font-size: 5.5rem;
+        letter-spacing: -6px;
+    }
+    .card-holder {
+        padding: 1rem 1.5rem;
     }
 }
 
@@ -653,5 +679,11 @@ hr {
         max-width: 1200px;
         margin: 0 auto;
     }
-    
+    .donate .title {
+        font-size: 6rem;
+        letter-spacing: -2px;
+    }
+    .card-holder {
+        padding: 1rem 1rem;
+    }
 }
