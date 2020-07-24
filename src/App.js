@@ -27,7 +27,7 @@ function App() {
                 Survive, Adapt &amp; Conquer
               </h1>
               <p className="subtitle pr-3">Everything wants you to die. You need to find food, shelter and weapons to prevent it.</p>
-              <a href="http://store.steampowered.com/app/252490/Rust/" className="button is-primary is-medium">
+              <a href="http://store.steampowered.com/app/252490/Rust/" target="_blank" className="button is-primary is-medium">
                 <span className="icon is-small">
                   <i className="mdi mdi-steam"></i></span>
                 <span>View Rust on Steam</span>
@@ -65,7 +65,7 @@ function App() {
           </div>
 
           <div className="col-12 d-flex justify-content-center">
-            <a href="http://bit.do/primrust" className="discord-holder">
+            <a href="http://bit.do/primrust" target="_blank" className="discord-holder">
               <button className="discord-button">
                 Open the Discord
               </button>
@@ -274,7 +274,7 @@ function App() {
                 <li>EnhancedHammer</li>
                 <li>Unbreakable Torch</li>
               </ul>
-              <a href="http://primrust.tebex.io"><div className="price">Donate $5.00</div></a>
+              <a href="http://primrust.tebex.io" target="_blank"><div className="price">Donate $5.00</div></a>
             </div>
           </section>
 
@@ -287,7 +287,7 @@ function App() {
                 <li>Colored Name</li>
                 <li>Knock Knock</li>
               </ul>
-              <a href="http://primrust.tebex.io"><div className="price">Donate $10.00</div></a>
+              <a href="http://primrust.tebex.io" target="_blank"><div className="price">Donate $10.00</div></a>
             </div>
           </section>
 
@@ -301,7 +301,7 @@ function App() {
                 <li>Quicksort</li>
                 <li>Pet</li>
               </ul>
-              <a href="http://primrust.tebex.io">
+              <a href="http://primrust.tebex.io" target="_blank">
                 <div className="price">Donate $15.00</div>
               </a>
             </div>
@@ -312,7 +312,7 @@ function App() {
                   <h2>Sack of Coin</h2>
                   <span className="d-none">Elevate Your Wealth</span>
                   <li>1000 RP Points</li>
-                  <a href="http://primrust.tebex.io">
+                  <a href="http://primrust.tebex.io" target="_blank">
                     <div className="points-price">
                       Donate $5.00
                     </div>

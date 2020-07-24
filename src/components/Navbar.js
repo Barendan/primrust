@@ -20,7 +20,7 @@ const NavbarComponent = () => {
 	return (
 		<Navbar collapseOnSelect expand="md" bg="dark" variant="dark" fixed="top" id="main-nav">
 			<Navbar.Brand href="/">
-				<img src="https://files.facepunch.com/s/c0444ba57c9a.svg" alt="Rust" width="112" height="28"/>
+				<img src="/images/primlogo1.png" alt="Server Logo" className="primlogo"/>
 			</Navbar.Brand>
 			<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 			<Navbar.Collapse id="responsive-navbar-nav">

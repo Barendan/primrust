@@ -12,6 +12,21 @@ body, button, input, select, textarea {
     box-sizing: border-box;
 }
 
+#main-nav {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    padding-left: 0 !important;
+}
+
+.navbar-brand {
+    padding: 0 !important;
+}
+
+.primlogo {
+    width: 200px;
+    height: 70px;
+}
+
 .justify-content-evenly {
     justify-content: space-evenly;
 }
@@ -566,6 +581,10 @@ hr {
     html {
         font-size: 18px;
     }
+    .primlogo {
+        width: 260px;
+        height: 70px;
+    }
     .nav-link {
         width: auto;
         font-size: 1.2rem;
@@ -634,6 +653,13 @@ hr {
 @media (min-width: 992px) {
     html {
         font-size: 20px;
+    }
+    .navbar-brand {
+        padding-left: 10px !important;
+    }
+    .primlogo {
+        width: 290px;
+        height: 75px;
     }
     .discord-image {
         max-height: 470px;
