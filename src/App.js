@@ -47,7 +47,7 @@ function App() {
           </div>
 
           <div className="col-lg-9 col-md-8 col-12 py-md-4 p-1">
-            <img src="/images/discordfull.png" className="discord-image" alt="discord application"/>
+            <img src="images/discordfull.png" className="discord-image" alt="discord application"/>
           </div>
 
           <div className="col-lg-3 col-md-4 col-12 py-md-4 p-1">
@@ -334,7 +334,7 @@ function App() {
           <div className="row">
               <div className="col-12 col-md-6 col-lg-4 pt-3">
                   <figure className="figure">
-                      <img src="/images/rust_village2.png" className="figure-img img-fluid img-thumbnail" alt="village of valenciaga"/>
+                      <img src="images/rust_village2.png" className="figure-img img-fluid img-thumbnail" alt="village of valenciaga"/>
                       <figcaption className="figure-caption">
                           <h6>Town of Valenciaga <small>(10-09-2019)</small></h6>
                           <p>Built within a valley, the town of Valenciaga was fully encompassed by a massive wall and powered mainly by windmills.</p>
@@ -368,7 +368,7 @@ function App() {
 
               <div className="col-12 col-md-6 col-lg-4 pt-3">
                 <figure className="figure">
-                  <a href="#"><img src="/images/eoka_off.png" className="figure-img img-fluid img-thumbnail" alt="eoka battle"/></a>
+                  <a href="#"><img src="images/eoka_off.png" className="figure-img img-fluid img-thumbnail" alt="eoka battle"/></a>
                   <figcaption className="figure-caption">
                     <h6>Eoka Roulette <small>(03-24-2020)</small></h6>
                     <p>While a war raged outside, two men met face to face deep in the castle cellar. Both pulled out an Eoka loaded with just one shot. Only one man left that cellar alive...</p>
