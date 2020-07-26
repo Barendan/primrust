@@ -1,10 +1,12 @@
-import React, { useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import $ from 'jquery'
 
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 
 const NavbarComponent = () => {
+
+	const [expanded, setExpanded] = useState(false);
 
 	useEffect(() => {
 	    $('.navbar-nav a').click(function(e) {
@@ -15,21 +17,24 @@ const NavbarComponent = () => {
 	            scrollTop: $('#' + anchor).offset().top
 	        }, 500);
 	    });
+	    $('.container-fluid').on("click", function(event){
+	    	setExpanded(false)
+	    });
   	},[])
 
 	return (
-		<Navbar collapseOnSelect expand="md" bg="dark" variant="dark" fixed="top" id="main-nav">
+		<Navbar expanded={expanded} collapseOnSelect expand="md" bg="dark" variant="dark" fixed="top" id="main-nav">
 			<Navbar.Brand href="/">
 				<img src="/images/primlogo1.png" alt="Server Logo" className="primlogo"/>
 			</Navbar.Brand>
-			<Navbar.Toggle aria-controls="responsive-navbar-nav" />
+			<Navbar.Toggle onClick={() => setExpanded(expanded ? false : "expanded")} aria-controls="responsive-navbar-nav" />
 			<Navbar.Collapse id="responsive-navbar-nav">
 				<Nav className="ml-auto">
-					<Nav.Link href="#discord">Discord</Nav.Link>
-					<Nav.Link href="#features">Features</Nav.Link>
-					<Nav.Link href="#modified">Modified</Nav.Link>
-					<Nav.Link href="#donate">Donate</Nav.Link>
-					<Nav.Link href="#clips">Clips</Nav.Link>
+					<Nav.Link onClick={() => setExpanded(false)} href="#discord">Discord</Nav.Link>
+					<Nav.Link onClick={() => setExpanded(false)} href="#features">Features</Nav.Link>
+					<Nav.Link onClick={() => setExpanded(false)} href="#modified">Modified</Nav.Link>
+					<Nav.Link onClick={() => setExpanded(false)} href="#donate">Donate</Nav.Link>
+					<Nav.Link onClick={() => setExpanded(false)} href="#clips">Clips</Nav.Link>
 				</Nav>
 			</Navbar.Collapse>
 		</Navbar>
