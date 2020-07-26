@@ -17,10 +17,19 @@ const NavbarComponent = () => {
 	            scrollTop: $('#' + anchor).offset().top
 	        }, 500);
 	    });
+
 	    $('.container-fluid').on("click", function(event){
 	    	setExpanded(false)
 	    });
   	},[])
+
+  	useEffect(() => {
+  		if(expanded){
+	    	$('.navbar-dark .navbar-toggler-icon').addClass('lighter-navbar-toggler-icon');
+	    } else {
+	    	$('.navbar-dark .navbar-toggler-icon').removeClass('lighter-navbar-toggler-icon');
+	    }
+  	},[expanded])
 
 	return (
 		<Navbar expanded={expanded} collapseOnSelect expand="md" bg="dark" variant="dark" fixed="top" id="main-nav">
