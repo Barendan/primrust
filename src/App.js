@@ -20,7 +20,7 @@ function App() {
           </video>
         </div>
 
-        <div className="row h-100 d-flex align-content-end">
+        <div className="row vh-100 d-flex align-content-end">
           <div className="col-md-6 offset-md-6 col-sm-7 offset-sm-5 col-12 pl-sm-4 pb-5">
             <div className="splash-text">
               <h1 className="title">
