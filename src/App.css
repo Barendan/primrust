@@ -22,6 +22,10 @@ body, button, input, select, textarea {
     padding: 0 !important;
 }
 
+.show > .navbar-nav {
+    padding-left: 5%;
+}
+
 .primlogo {
     width: 200px;
     height: 65px;
@@ -514,6 +518,7 @@ hr {
         font-size: 1.7rem;
         letter-spacing: 4px;
         border-bottom: 1px solid;
+        padding-left: 10%;
         width: 10%;
         transition: width 1s;
     }
