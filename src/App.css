@@ -23,12 +23,12 @@ body, button, input, select, textarea {
 }
 
 .show > .navbar-nav {
-    padding-left: 5%;
+    padding-left: 2%;
 }
 
 .primlogo {
     width: 200px;
-    height: 65px;
+    height: 60px;
 }
 
 .justify-content-evenly {
@@ -250,6 +250,7 @@ body, button, input, select, textarea {
 
 .table {
     background: #f5f5f5bd;
+    margin-bottom: 0;
 }
 
 .tableadjust {
