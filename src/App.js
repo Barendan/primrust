@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <NavbarComponent />
 
-      <div className="container-fluid vh-100 splash">
+      <div className="container-fluid splash">
 
         <div className="asset-container">
           <video preload="auto" autoPlay="autoplay" muted="muted" loop="loop" playsInline="" className="bg-media-hero-video">
