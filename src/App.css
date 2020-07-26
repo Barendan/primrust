@@ -43,7 +43,7 @@ body, button, input, select, textarea {
 .navbar {
     font-size: 20px;
     background: #000 !important;
-    opacity: 0.9;
+    opacity: 0.95;
 }
 
 .anchor {
