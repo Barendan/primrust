@@ -24,6 +24,7 @@ body, button, input, select, textarea {
 
 .show > .navbar-nav {
     padding-left: 2%;
+    transition: padding 1s;
 }
 
 .primlogo {
