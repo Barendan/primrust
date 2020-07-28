@@ -62,6 +62,14 @@ body, button, input, select, textarea {
 .splash {
     background-color: #181818;
     height: 100vh;
+    display : table;
+    border-collapse: collapse;
+}
+
+.splash-inner {
+    display : table-row;
+    vertical-align : bottom;
+    height: 400px;
 }
 
 .splash .asset-container {
@@ -593,6 +601,9 @@ hr {
 @media (min-width: 768px) {
     html {
         font-size: 18px;
+    }
+    .splash-inner {
+        height: 430px;
     }
     .primlogo {
         width: 260px;
