@@ -261,65 +261,68 @@ function App() {
 
         <div className="row mx-lg-auto d-flex justify-content-evenly donate-inner">
           <section className="col-lg-4 col-md-3 col-12 card-holder">
-            <div className="donate-card conno">
-              <h2>Connoisseur</h2>
-              <span>The Starter Package</span>
-              <ul>
-                <li>CustomRock</li>
-                <li>Sign Artist</li>
-                <li>Queue Bypass</li>
-                <li>Unbreakable Torch</li>
-              </ul>
-              <a href="http://primrust.tebex.io/category/30-day-packages" target="_blank"><div className="price">Donate $5.00</div></a>
-            </div>
+            <a href="http://primrust.tebex.io/category/30-day-packages" target="_blank">
+              <div className="donate-card conno">
+                <h2>Connoisseur</h2>
+                <span>The Starter Package</span>
+                <ul>
+                  <li>CustomRock</li>
+                  <li>Sign Artist</li>
+                  <li>Queue Bypass</li>
+                  <li>Unbreakable Torch</li>
+                </ul>
+                <div className="price">Donate $5.00</div>
+              </div>
+            </a>
           </section>
 
           <section className="col-lg-4 col-md-3 col-12 card-holder">
-            <div className="donate-card gladiator">
-              <h2>Gladiator</h2>
-              <span>Better, Faster, Stronger</span>
-              <ul>
-                <li>Spawn at Full HP</li>
-                <li>Colored Name</li>
-                <li>Knock Knock</li>
-              </ul>
-              <a href="http://primrust.tebex.io/category/30-day-packages" target="_blank"><div className="price">Donate $10.00</div></a>
-            </div>
+            <a href="http://primrust.tebex.io/category/30-day-packages" target="_blank">
+              <div className="donate-card gladiator">
+                <h2>Gladiator</h2>
+                <span>Better, Faster, Stronger</span>
+                <ul>
+                  <li>Spawn at Full HP</li>
+                  <li>Colored Name</li>
+                  <li>Knock Knock</li>
+                </ul>
+                <div className="price">Donate $10.00</div>
+              </div>
+            </a>
           </section>
 
           <section className="col-lg-4 col-md-3 col-12 card-holder">
-            <div className="donate-card king">
-              <h2>King of Kings</h2>
-              <span> The Boss Package</span>
-              <ul>
-                <li>FireSword</li>
-                <li>Backpack (2 rows)</li>
-                <li>Quicksort</li>
-                <li>Pet</li>
-              </ul>
-              <a href="http://primrust.tebex.io/category/30-day-packages" target="_blank">
+            <a href="http://primrust.tebex.io/category/30-day-packages" target="_blank">
+              <div className="donate-card king">
+                <h2>King of Kings</h2>
+                <span>The Boss Package</span>
+                <ul>
+                  <li>FireSword</li>
+                  <li>Backpack (2 rows)</li>
+                  <li>Quicksort</li>
+                  <li>Pet</li>
+                </ul>
                 <div className="price">Donate $15.00</div>
-              </a>
-            </div>
+              </div>
+            </a>
           </section>
 
           <section className="col-12 pt-md-5 card-holder">
+            <a href="http://primrust.tebex.io/category/1480119" target="_blank">
               <div className="buypoints loot">
                   <h2>Sack of Coin</h2>
                   <span className="d-none">Elevate Your Wealth</span>
                   <li>1000 RP Points</li>
-                  <a href="http://primrust.tebex.io/category/1480119" target="_blank">
-                    <div className="points-price">
-                      Donate $5.00
-                    </div>
-                  </a>
+                  <div className="points-price">
+                    Donate $5.00
+                  </div>
               </div>
+            </a>
           </section>
           <div className="col-12 fineprint">
               *All donations are final. No refunds.
           </div>
         </div>
-
       </div>
 
       <div className="container-fluid clips">
@@ -330,10 +333,12 @@ function App() {
           <div className="row">
               <div className="col-12 col-md-6 col-lg-4 pt-3">
                   <figure className="figure">
-                      <img src="images/rust_village2.png" className="figure-img img-fluid img-thumbnail" alt="village of valenciaga"/>
+                      <div className="embed-responsive embed-responsive-16by9 figure-img">
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/-aUmdtZyOI8" title="gladiator arena" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                      </div>
                       <figcaption className="figure-caption">
-                          <h6>Town of Valenciaga <small>(10-09-2019)</small></h6>
-                          <p>Built within a valley, the town of Valenciaga was fully encompassed by a massive wall and powered mainly by windmills.</p>
+                          <h6>Deathmatch Arenas <small>(07-30-2020)</small></h6>
+                          <p>Introducing the all new Arena events. A place for the top warriors to prove themselves. Gladiators may enter from any location, choose their weapon of choice, and begin their ascension to fame.</p>
                       </figcaption>
                   </figure>
               </div>
@@ -353,18 +358,18 @@ function App() {
               <div className="col-12 col-md-6 col-lg-4 pt-3">
                   <figure className="figure">
                       <div className="embed-responsive embed-responsive-16by9 figure-img">
-                          <iframe className="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/-xk9EcROMbw" title="castle siege" frameBorder="0" allowFullScreen></iframe>
+                          <iframe className="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/J8Ur-m2D8g4" title="Goblins Ep.1" frameBorder="0" allowFullScreen></iframe>
                       </div>
                       <figcaption className="figure-caption">
-                          <h6>Castle Under Siege <small>(06-09-2020)</small></h6>
-                          <p>Castle Starlord was bombarded with a surprise attack by DOGs clan. Few Knights were available to alleviate the seige and so the sleeper Kashmar was activated. </p>
+                          <h6>Goblins: A Scuffed Start <small>(07-21-2020)</small></h6>
+                          <p>Life in the shoes of a Goblin, Episode #1. The Goblins clan has a rough start after encountering many enemies on this fresh wipe.</p>
                       </figcaption>
                   </figure>
               </div>
 
               <div className="col-12 col-md-6 col-lg-4 pt-3">
                 <figure className="figure">
-                  <a href="#"><img src="images/eoka_off.png" className="figure-img img-fluid img-thumbnail" alt="eoka battle"/></a>
+                  <img src="images/eoka_off.png" className="figure-img img-fluid img-thumbnail" alt="eoka battle"/>
                   <figcaption className="figure-caption">
                     <h6>Eoka Roulette <small>(03-24-2020)</small></h6>
                     <p>While a war raged outside, two men met face to face deep in the castle cellar. Both pulled out an Eoka loaded with just one shot. Only one man left that cellar alive...</p>
@@ -375,23 +380,21 @@ function App() {
               <div className="col-12 col-md-6 col-lg-4 pt-3">
                   <figure className="figure">
                       <div className="embed-responsive embed-responsive-16by9 figure-img">
-                          <iframe width="560" height="315" src="https://www.youtube.com/embed/-aUmdtZyOI8" title="gladiator arena" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/n0bbt-WeiJE" title="solo raiding" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                       </div>
                       <figcaption className="figure-caption">
-                          <h6>Gladiator Arena <small>(06-17-2020)</small></h6>
-                          <p>A place for the top warriors to prove themselves. Everyone is welcome to participate but there can only be one victor.</p>
+                          <h6>Solo Raiding <small>(12-31-2019)</small></h6>
+                          <p>The lone wolf hungers for riches. Seems he is not the only one, as 3 more wolves come with blood on their minds. Who will come out victorious...</p>
                       </figcaption>
                   </figure>
               </div>
 
               <div className="col-12 col-md-6 col-lg-4 pt-3">
                   <figure className="figure">
-                      <div className="embed-responsive embed-responsive-16by9 figure-img">
-                          <iframe width="560" height="315" src="https://www.youtube.com/embed/n0bbt-WeiJE" title="solo raiding" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                      </div>
+                      <img src="images/rust_village2.png" className="figure-img img-fluid img-thumbnail" alt="village of valenciaga"/>
                       <figcaption className="figure-caption">
-                          <h6>Solo Raiding <small>(12-31-2019)</small></h6>
-                          <p>The lone wolf hungers for treasure. Seems he is not the only one, as 3 more wolves come with blood on their minds. Who will come out victorious..</p>
+                          <h6>Town of Valenciaga <small>(10-09-2019)</small></h6>
+                          <p>Built within a valley, the town of Valenciaga was fully encompassed by a massive wall and powered mainly by windmills.</p>
                       </figcaption>
                   </figure>
               </div>
