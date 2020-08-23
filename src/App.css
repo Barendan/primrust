@@ -12,6 +12,20 @@ body, button, input, select, textarea {
     box-sizing: border-box;
 }
 
+button:focus {
+    outline: 0px dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+}
+
+:focus {
+    outline: 0px;
+}
+
+.navbar-toggler:not(.collapsed) {
+    outline: 1px dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+}
+
 #main-nav {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
@@ -265,9 +279,9 @@ body, button, input, select, textarea {
 }
 
 .pluglist {
-    max-height: 380px;
-    border: 1px solid #ababab;
+    max-height: 350px;
     overflow-y: scroll;
+    border: 2px solid #2f4046;
 }
 
 .table {
@@ -281,11 +295,12 @@ body, button, input, select, textarea {
 }
 
 #style-1::-webkit-scrollbar {
-    width: 10px;
+    width: 13px;
 }
 
 #style-1::-webkit-scrollbar-thumb {
     background-color: #2980b9;
+    background-color: #c0c0c0;
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
 }
 
@@ -303,26 +318,6 @@ body, button, input, select, textarea {
     background-image: linear-gradient(to right, #5f5f5f 50%, #FFF 50%);
     -webkit-background-size: 130px 100%;
     background-size: 77px 100%;
-}
-
-/*=====================================================*/
-/*=====================================================*/
-.clips {
-    position: relative;
-    padding: 1rem 0.5rem 0rem;
-}
-
-.clips .title {
-    color: #645841;
-    font-size: 18vw;
-}
-
-.figure-caption h6 {
-    font-size: 1.1rem;
-}
-
-.figure-caption p {
-    font-size: 0.8rem;
 }
 
 /*=====================================================*/
@@ -408,21 +403,25 @@ body, button, input, select, textarea {
     background-image: url("https://cdn.shopify.com/s/files/1/0895/0864/products/1217512_600x.jpeg");
     background-size: auto;
     background-blend-mode: soft-light;
+    background-repeat: no-repeat;
 }
 .gladiator {
     background-image: url("https://i.pinimg.com/originals/98/24/40/982440e2f39c73420e1859f92398b1e4.jpg");
     background-size: cover;
     background-blend-mode: soft-light;
+    background-repeat: no-repeat;
 }
 .king {
     background-image: url("https://i.pinimg.com/564x/18/31/4d/18314d2ce5fcf5b8e3ddc5312787e515.jpg");
     background-size: 130% 130%;
     background-blend-mode: soft-light;
+    background-repeat: no-repeat;
 }
 .loot {
     background-image: url("https://www.irishcentral.com/uploads/article-v2/2019/11/135877/Gold_Coins_treasurese_Getty.jpg");
     background-size: cover;
     background-blend-mode: soft-light;
+    background-repeat: no-repeat;
 }
 
 .buypoints {
@@ -464,6 +463,26 @@ body, button, input, select, textarea {
     justify-content: center;
     font-size: 0.7rem;
     padding-left: 2rem;
+}
+
+/*=====================================================*/
+/*=====================================================*/
+.clips {
+    position: relative;
+    padding: 1rem 0.5rem 0rem;
+}
+
+.clips .title {
+    color: #645841;
+    font-size: 18vw;
+}
+
+.figure-caption h6 {
+    font-size: 1.1rem;
+}
+
+.figure-caption p {
+    font-size: 0.8rem;
 }
 
 /*=====================================================*/
@@ -531,7 +550,6 @@ hr {
     text-align: center;
 }
 
-
 /*=====================================================*/
 /*=====================================================*/
 
@@ -592,6 +610,9 @@ hr {
     .mods {
         padding: 4rem 1rem;
     }
+    .list-holder {
+        max-width: 310px;
+    }
     .pluglist {
         max-width: 320px;
     }
@@ -639,6 +660,12 @@ hr {
         font-size: 1rem;
         letter-spacing: 0px;
         padding-bottom: 8%;
+    }
+    .list-holder {
+        max-width: 340px;
+    }
+    .pluglist {
+        max-height: 380px;
     }
     .subtext {
         font-size: 0.7rem;
@@ -694,11 +721,15 @@ hr {
         width: 290px;
         height: 75px;
     }
+    .discord-inner {
+        max-width: 1050px;
+        margin: 0 auto;
+    }
     .discord-image {
         max-height: 470px;
     }
     .discord ul {
-        padding: 10% 0rem 0rem 10%;
+        padding: 10% 0rem 0rem 0%;
     }
     .discord li {
         font-size: 1.1rem;
@@ -709,7 +740,7 @@ hr {
         margin-bottom: 6rem;
     }
     .features-inner {
-        max-width: 1000px;
+        max-width: 1100px;
         margin: 0 auto;
     }
     .mods-holder {
@@ -734,10 +765,6 @@ hr {
 
 /*// Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
-    .discord-inner {
-        max-width: 1200px;
-        margin: 0 auto;
-    }
     .donate .title {
         font-size: 6rem;
         letter-spacing: -2px;

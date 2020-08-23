@@ -12,7 +12,6 @@ function App() {
       <NavbarComponent />
 
       <div className="container-fluid splash">
-
         <div className="asset-container">
           <video preload="auto" autoPlay="autoplay" muted="muted" loop="loop" playsInline="" className="bg-media-hero-video">
               <source type="video/mp4" src="https://files.facepunch.com/paddy/20190514/rust_bgvideo_website_003_noaudio.mp4"/>
@@ -127,7 +126,7 @@ function App() {
 
               <div className="col-12 mx-lg-auto my-3 px-4 info-container">
                   <p className="info">
-                    The Primitive world is tailored to bring you the most optimal gaming experience. We make dynamic changes that encourage balanced gameplay, including many quality of life upgrades. 
+                    Embrace the sword and bow as you battle vicious creatures, bandits, and other adventurers seeking glory. Start protection will keep you safe for an hour but after that, anything goes. Use this time to settle in the safer lands of melee or boldly venture into the wilderness where deadly archers await in the trees. 
                   </p>
               </div>
 
@@ -136,51 +135,50 @@ function App() {
                 <div className="pluglist" id="style-1">
                   <table className="table table-hover table-striped">
                     <tbody className="tableadjust">
+                      <tr><td>Active Staff</td></tr>
+                      <tr><td>Arena Deathmatch</td></tr>
                       <tr><td>Automated Events</td></tr>
                       <tr><td>Backpack</td></tr>
                       <tr><td>Better Loot</td></tr>
-                      <tr><td>Bypass Queue</td></tr>
                       <tr><td>Chat Filter</td></tr>
                       <tr><td>Clans / TC Share</td></tr>
-                      <tr><td>Crafting Speed</td></tr>
+                      <tr><td>Crafting Speed (2x)</td></tr>
                       <tr><td>Custom NPCs</td></tr>
                       <tr><td>Eletrical / RP Kits</td></tr>
-                      <tr><td>Enhanced Hammer</td></tr>
                       <tr><td>Entity Limit</td></tr>
                       <tr><td>FireSword</td></tr>
                       <tr><td>Fishing</td></tr>
-                      <tr><td>Finish Me</td></tr>
                       <tr><td>Furnace Auto-Splitter</td></tr>
                       <tr><td>Gather Rate 2x</td></tr>
-                      <tr><td>Heli Spawn</td></tr>
-                      <tr><td>Horse hp reduced</td></tr>
-                      <tr><td>Horse reset daily</td></tr>
+                      <tr><td>Hit Marker</td></tr>
+                      <tr><td>Horse HP Reduced</td></tr>
+                      <tr><td>Horse Reset Daily</td></tr>
                       <tr><td>Ignore Player</td></tr>
                       <tr><td>Info Panel</td></tr>
-                      <tr><td>Jackhammer dmg removed</td></tr>
+                      <tr><td>Jackhammer Damage Disabled</td></tr>
                       <tr><td>King / Lords</td></tr>
                       <tr><td>Knock Knock</td></tr>
                       <tr><td>Loot Bouncer</td></tr>
-                      <tr><td>Metabolism Improved</td></tr>
-                      <tr><td>Never wear</td></tr>
+                      <tr><td>Melee-only Zone</td></tr>
                       <tr><td>Night Lantern</td></tr>
-                      <tr><td>No Escape</td></tr>
                       <tr><td>Player Leaderboard</td></tr>
                       <tr><td>Player Rankings</td></tr>
-                      <tr><td>Private Messages</td></tr>
-                      <tr><td>Quick Smelt</td></tr>
+                      <tr><td>Private Messaging</td></tr>
+                      <tr><td>Quick Smelt (2x)</td></tr>
                       <tr><td>Quick Sort</td></tr>
+                      <tr><td>Raid Block</td></tr>
                       <tr><td>Raid Notice</td></tr>
                       <tr><td>Random Spawns</td></tr>
                       <tr><td>Research Block</td></tr>
                       <tr><td>Server Rewards (RP)</td></tr>
-                      <tr><td>Shorter Night</td></tr>
+                      <tr><td>Shorter Night (5min)</td></tr>
                       <tr><td>Sign Artist</td></tr>
-                      <tr><td>Skinbox (free)</td></tr>
-                      <tr><td>StackSizes Boosted</td></tr>
-                      <tr><td>Tamable Pets</td></tr>
-                      <tr><td>Trophy Signs</td></tr>
-                      <tr><td>Upgrade Workbenches</td></tr>
+                      <tr><td>Skinbox (Free)</td></tr>
+                      <tr><td>StackSizes Increased</td></tr>
+                      <tr><td>Start Protection</td></tr>
+                      <tr><td>Tameable Pets</td></tr>
+                      <tr><td>Skull Trophies</td></tr>
+                      <tr><td>Upgradable Workbench</td></tr>
                     </tbody>
                   </table>
                 </div>
@@ -213,15 +211,15 @@ function App() {
                               <td className="text-right">100 hours</td>
                             </tr>
                             <tr> 
-                              <td>Squire</td>
+                              <td>Knight</td>
                               <td className="text-right">200 hours</td>
                             </tr>
                             <tr> 
-                              <td>Knight</td>
+                              <td>Constable</td>
                               <td className="text-right">300 hours</td>
                             </tr>
                             <tr>
-                              <td>Constable</td>
+                              <td>Marshal</td>
                               <td className="text-right">500 hours</td>
                             </tr>
                             <tr>
@@ -265,15 +263,14 @@ function App() {
           <section className="col-lg-4 col-md-3 col-12 card-holder">
             <div className="donate-card conno">
               <h2>Connoisseur</h2>
-              <span> The Starter Package</span>
+              <span>The Starter Package</span>
               <ul>
                 <li>CustomRock</li>
                 <li>Sign Artist</li>
                 <li>Queue Bypass</li>
-                <li>EnhancedHammer</li>
                 <li>Unbreakable Torch</li>
               </ul>
-              <a href="http://primrust.tebex.io" target="_blank"><div className="price">Donate $5.00</div></a>
+              <a href="http://primrust.tebex.io/category/30-day-packages" target="_blank"><div className="price">Donate $5.00</div></a>
             </div>
           </section>
 
@@ -286,7 +283,7 @@ function App() {
                 <li>Colored Name</li>
                 <li>Knock Knock</li>
               </ul>
-              <a href="http://primrust.tebex.io" target="_blank"><div className="price">Donate $10.00</div></a>
+              <a href="http://primrust.tebex.io/category/30-day-packages" target="_blank"><div className="price">Donate $10.00</div></a>
             </div>
           </section>
 
@@ -300,7 +297,7 @@ function App() {
                 <li>Quicksort</li>
                 <li>Pet</li>
               </ul>
-              <a href="http://primrust.tebex.io" target="_blank">
+              <a href="http://primrust.tebex.io/category/30-day-packages" target="_blank">
                 <div className="price">Donate $15.00</div>
               </a>
             </div>
@@ -311,7 +308,7 @@ function App() {
                   <h2>Sack of Coin</h2>
                   <span className="d-none">Elevate Your Wealth</span>
                   <li>1000 RP Points</li>
-                  <a href="http://primrust.tebex.io" target="_blank">
+                  <a href="http://primrust.tebex.io/category/1480119" target="_blank">
                     <div className="points-price">
                       Donate $5.00
                     </div>
@@ -403,7 +400,6 @@ function App() {
         </section>
         <Footer />
       </div>
-
   </div>
   );
 }
