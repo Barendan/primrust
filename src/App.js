@@ -135,50 +135,48 @@ function App() {
                 <div className="pluglist" id="style-1">
                   <table className="table table-hover table-striped">
                     <tbody className="tableadjust">
-                      <tr><td>Active Staff</td></tr>
-                      <tr><td>Arena Deathmatch</td></tr>
                       <tr><td>Automated Events</td></tr>
                       <tr><td>Backpack</td></tr>
-                      <tr><td>Better Loot</td></tr>
+                      <tr><td>Improved Loot</td></tr>
                       <tr><td>Chat Filter</td></tr>
                       <tr><td>Clans / TC Share</td></tr>
                       <tr><td>Crafting Speed (2x)</td></tr>
                       <tr><td>Custom NPCs</td></tr>
-                      <tr><td>Eletrical / RP Kits</td></tr>
+                      <tr><td>Deathmatch events</td></tr>
+                      <tr><td>Pvp, Build, Boom Kits</td></tr>
                       <tr><td>Entity Limit</td></tr>
                       <tr><td>FireSword</td></tr>
                       <tr><td>Fishing</td></tr>
                       <tr><td>Furnace Auto-Splitter</td></tr>
-                      <tr><td>Gather Rate 2x</td></tr>
                       <tr><td>Hit Marker</td></tr>
                       <tr><td>Horse HP Reduced</td></tr>
                       <tr><td>Horse Reset Daily</td></tr>
                       <tr><td>Ignore Player</td></tr>
                       <tr><td>Info Panel</td></tr>
-                      <tr><td>Jackhammer Damage Disabled</td></tr>
+                      <tr><td>Jackhammer Dmg Disabled</td></tr>
                       <tr><td>King / Lords</td></tr>
                       <tr><td>Knock Knock</td></tr>
                       <tr><td>Loot Bouncer</td></tr>
-                      <tr><td>Melee-only Zone</td></tr>
-                      <tr><td>Night Lantern</td></tr>
                       <tr><td>Player Leaderboard</td></tr>
                       <tr><td>Player Rankings</td></tr>
                       <tr><td>Private Messaging</td></tr>
                       <tr><td>Quick Smelt (2x)</td></tr>
                       <tr><td>Quick Sort</td></tr>
+                      <tr><td>Raidable Bases</td></tr>
                       <tr><td>Raid Block</td></tr>
                       <tr><td>Raid Notice</td></tr>
                       <tr><td>Random Spawns</td></tr>
                       <tr><td>Research Block</td></tr>
                       <tr><td>Server Rewards (RP)</td></tr>
-                      <tr><td>Shorter Night (5min)</td></tr>
+                      <tr><td>Short Night (5min)</td></tr>
                       <tr><td>Sign Artist</td></tr>
                       <tr><td>Skinbox (Free)</td></tr>
+                      <tr><td>Skip Night</td></tr>
                       <tr><td>StackSizes Increased</td></tr>
-                      <tr><td>Start Protection</td></tr>
                       <tr><td>Tameable Pets</td></tr>
                       <tr><td>Skull Trophies</td></tr>
                       <tr><td>Upgradable Workbench</td></tr>
+                      <tr><td>Z Levels Gathering</td></tr>
                     </tbody>
                   </table>
                 </div>
@@ -189,61 +187,65 @@ function App() {
                   <h2 className="mods-subtitle">Player Ranks</h2>
                   <div className="pluglist" id="style-1">
                     <table className="table table-hover table-striped">
-                      <tbody className="tableadjust">
+                      <tbody className="tableadjust ranks">
                             <tr> 
-                              <td>Caveman</td> 
+                              <td className="rank-hover">Caveman</td> 
                               <td className="text-right">1 hour</td> 
                             </tr>
                             <tr> 
-                              <td>Forager</td> 
+                              <td className="rank-hover">Forager</td> 
                               <td className="text-right">10 hours</td> 
                             </tr>
                             <tr> 
-                              <td>Serf</td>
+                              <td className="rank-hover">Serf</td>
                               <td className="text-right">25 hours</td>
                             </tr>
                             <tr> 
-                              <td>Peasant</td>
+                              <td className="rank-hover">Peasant</td>
                               <td className="text-right">50 hours</td>
                             </tr>
                             <tr> 
-                              <td>Hunter</td>
+                              <td className="rank-hover">Hunter</td>
                               <td className="text-right">100 hours</td>
                             </tr>
                             <tr> 
-                              <td>Knight</td>
+                              <td className="rank-hover">Squire</td>
                               <td className="text-right">200 hours</td>
                             </tr>
                             <tr> 
-                              <td>Constable</td>
-                              <td className="text-right">300 hours</td>
+                              <td className="rank-hover">Knight</td>
+                              <td className="text-right">250 hours</td>
+                            </tr>
+                            <tr> 
+                              <td className="rank-hover">Sage</td>
+                              <td className="text-right">375 hours</td>
+                            </tr>
+                            <tr> 
+                              <td className="rank-hover">Constable</td>
+                              <td className="text-right">450 hours</td>
                             </tr>
                             <tr>
-                              <td>Marshal</td>
-                              <td className="text-right">500 hours</td>
+                              <td className="rank-hover">Marshal</td>
+                              <td className="text-right">600 hours</td>
                             </tr>
                             <tr>
-                              <td>Duke</td>
-                              <td className="text-right">650 hours</td>
-                            </tr>
-                            <tr>
-                              <td>Sage</td>
+                              <td className="rank-hover">Duke</td>
                               <td className="text-right">800 hours</td>
                             </tr>
                             <tr>
-                              <td>Monarch</td>
+                              <td className="rank-hover">Monarch</td>
                               <td className="text-right">1000 hours</td>
                             </tr>
                             <tr>
-                              <td>Prince</td>
-                              <td className="text-right">1300 hours</td>
+                              <td className="rank-hover">Prince</td>
+                              <td className="text-right">1250 hours</td>
                             </tr>
                             <tr>
-                              <td>Emperor</td>
+                              <td className="rank-hover">Emperor</td>
                               <td className="text-right">1500 hours</td>
                             </tr>
                             <tr>
-                              <td>God</td>
+                              <td className="rank-hover">God</td>
                               <td className="text-right">2000 hours</td>
                             </tr>
                       </tbody>
@@ -261,14 +263,14 @@ function App() {
 
         <div className="row mx-lg-auto d-flex justify-content-evenly donate-inner">
           <section className="col-lg-4 col-md-3 col-12 card-holder">
-            <a href="http://primrust.tebex.io/category/30-day-packages" target="_blank">
+            <a href="http://primrust.tebex.io/category/elite-packages" target="_blank">
               <div className="donate-card conno">
                 <h2>Connoisseur</h2>
-                <span>The Starter Package</span>
+                <span>Culture and Fine Art</span>
                 <ul>
-                  <li>CustomRock</li>
+                  <li>Knock Knock</li>
                   <li>Sign Artist</li>
-                  <li>Queue Bypass</li>
+                  <li>Enhanced Hammer</li>
                   <li>Unbreakable Torch</li>
                 </ul>
                 <div className="price">Donate $5.00</div>
@@ -277,14 +279,15 @@ function App() {
           </section>
 
           <section className="col-lg-4 col-md-3 col-12 card-holder">
-            <a href="http://primrust.tebex.io/category/30-day-packages" target="_blank">
+            <a href="http://primrust.tebex.io/category/elite-packages" target="_blank">
               <div className="donate-card gladiator">
                 <h2>Gladiator</h2>
                 <span>Better, Faster, Stronger</span>
                 <ul>
-                  <li>Spawn at Full HP</li>
-                  <li>Colored Name</li>
-                  <li>Knock Knock</li>
+                  <li>Spawn w/ Full HP</li>
+                  <li>Firesword</li>
+                  <li>Upgradeable WB</li>
+                  <li>500 RP Points</li>
                 </ul>
                 <div className="price">Donate $10.00</div>
               </div>
@@ -292,13 +295,13 @@ function App() {
           </section>
 
           <section className="col-lg-4 col-md-3 col-12 card-holder">
-            <a href="http://primrust.tebex.io/category/30-day-packages" target="_blank">
+            <a href="http://primrust.tebex.io/category/elite-packages" target="_blank">
               <div className="donate-card king">
                 <h2>King of Kings</h2>
                 <span>The Boss Package</span>
                 <ul>
-                  <li>FireSword</li>
-                  <li>Backpack (2 rows)</li>
+                  <li>Backpack +12 Slots</li>
+                  <li>Change Name Color</li>
                   <li>Quicksort</li>
                   <li>Pet</li>
                 </ul>
@@ -334,11 +337,11 @@ function App() {
               <div className="col-12 col-md-6 col-lg-4 pt-3">
                   <figure className="figure">
                       <div className="embed-responsive embed-responsive-16by9 figure-img">
-                          <iframe width="560" height="315" src="https://www.youtube.com/embed/-aUmdtZyOI8" title="gladiator arena" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/wEybO33-fCo" title="gladiator arena" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                       </div>
                       <figcaption className="figure-caption">
-                          <h6>Deathmatch Arenas <small>(07-30-2020)</small></h6>
-                          <p>Introducing the all new Arena events. A place for the top warriors to prove themselves. Gladiators may enter from any location, choose their weapon of choice, and begin their ascension to fame.</p>
+                          <h6>Primitive Pvp <small>(09-28-2020)</small></h6>
+                          <p>Watch and experience a higher echelon of pvp skill and strategy. Thousands of hours of gameplay and adaptation culminated into this one video. Created by and featuring Broz0.</p>
                       </figcaption>
                   </figure>
               </div>

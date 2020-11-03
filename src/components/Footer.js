@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Footer = () => (
+export default () => (
 	<div className="row px-md-5 pb-md-2 mt-5 social-holder">
 		<div className="col-12 sociallinks">
 			<a className="link youtube" href="https://www.youtube.com/channel/UC0vL7CHL6UOgkEA0ygbkOzA" title="Primitive on youtube" target="_blank" rel="noopener noreferrer"><svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 576 512" className="icon" height="1em" width="1em"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg>
@@ -18,9 +18,7 @@ const Footer = () => (
 		<hr/>
 
 		<p className="copyright">
-		Created with &hearts; by LionCoded &copy; 2020 
+		Created with &hearts; by PrimRust &copy; 2020 
 		</p>
 	</div>
 )
-
-export default Footer
